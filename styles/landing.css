@@ -1,0 +1,44 @@
+.landing {
+  padding: 24em 7.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.landing-social {
+  width: 7.5em;
+  padding: 0.45em 0;
+}
+
+.landing-social ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-social li {
+  width: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.landing-social-icon {
+  /* background-color: white; */
+}
+
+.landing-intro {
+  width: 75em;
+  color: white;
+}
+
+.landing-intro h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0 0 0.25em;
+}
+
+.landing-intro h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0 0 1.5em;
+}
