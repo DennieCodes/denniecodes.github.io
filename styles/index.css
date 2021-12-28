@@ -1,6 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: black;
+  background-color: #000;
+}
+
+ul {
+  padding: 0;
 }
 
 li {
@@ -37,7 +41,7 @@ li {
 
 .landing-intro {
   width: 75em;
-  color: white;
+  color: #fff;
 }
 
 .landing-intro h1 {
@@ -50,4 +54,57 @@ li {
   font-size: 1.4rem;
   font-weight: 500;
   margin: 0 0 1.5em;
+}
+
+/* Project-directory styling */
+.project-directory {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+/* Project (individual item) styling */
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.project-images {
+  display: flex;
+  flex-direction: column;
+}
+.project-snapshot {
+  height: 15.25rem;
+  width: 100%;
+  object-fit: cover;
+}
+.project-info {
+  background-color: #404040;
+  padding: 1rem;
+  color: #fff;
+}
+.project-info h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+.project-info p {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.project-tech {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.project-tech li {
+  background-color: #fff;
+  color: #000;
+  padding: 0.5rem;
+  line-height: 0.9rem;
+  border-radius: 8%;
 }

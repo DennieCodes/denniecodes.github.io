@@ -1,3 +1,5 @@
+@import "./theme";
+
 .landing {
   padding: 24em 7.5em;
   display: flex;
@@ -28,7 +30,7 @@
 
 .landing-intro {
   width: 75em;
-  color: white;
+  color: $text-color--main;
 }
 
 .landing-intro h1 {

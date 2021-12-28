@@ -1,0 +1,63 @@
+@import "./theme";
+
+/* Project-directory styling */
+.project-directory {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+/* Project (individual item) styling */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  &-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-snapshot {
+    height: 15.25rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &-info {
+    background-color: $bg-color--second;
+    padding: 1rem;
+    color: $text-color--main;
+
+    & h3 {
+      font-size: 1.8rem;
+      color: $text-color--main;
+      font-weight: 400;
+      margin: 0 0 0.5rem;
+    }
+
+    & p {
+      font-size: 0.9rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  &-tech {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    & li {
+      background-color: $text-color--main;
+      color: $bg-color--main;
+
+      padding: 0.5rem;
+      line-height: 0.9rem;
+      border-radius: 8%;
+    }
+  }
+}
