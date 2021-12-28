@@ -1,10 +1,19 @@
 @import "./theme";
 
+.projects {
+  margin: 0 1rem;
+  h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $text-color--main;
+  }
+}
+
 /* Project-directory styling */
 .project-directory {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
+  gap: 1.5rem;
 }
 
 /* Project (individual item) styling */
@@ -13,20 +22,20 @@
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  background-color: $bg-color--second;
 
   &-images {
     display: flex;
     flex-direction: column;
+    padding: 0.5rem;
   }
 
   &-snapshot {
-    height: 15.25rem;
-    width: 100%;
     object-fit: cover;
   }
 
   &-info {
-    background-color: $bg-color--second;
+    // background-color: $bg-color--second;
     padding: 1rem;
     color: $text-color--main;
 
@@ -52,12 +61,27 @@
     gap: 1rem;
 
     & li {
+      font-size: 0.75rem;
       background-color: $text-color--main;
       color: $bg-color--main;
 
       padding: 0.5rem;
-      line-height: 0.9rem;
+      line-height: 1rem;
       border-radius: 8%;
+    }
+  }
+
+  &-links {
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-around;
+
+    & a {
+      color: $text-color--main;
     }
   }
 }

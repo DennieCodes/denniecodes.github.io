@@ -56,11 +56,20 @@ li {
   margin: 0 0 1.5em;
 }
 
+.projects {
+  margin: 0 1rem;
+}
+.projects h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff;
+}
+
 /* Project-directory styling */
 .project-directory {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
+  gap: 1.5rem;
 }
 
 /* Project (individual item) styling */
@@ -68,18 +77,17 @@ li {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  background-color: #404040;
 }
 .project-images {
   display: flex;
   flex-direction: column;
+  padding: 0.5rem;
 }
 .project-snapshot {
-  height: 15.25rem;
-  width: 100%;
   object-fit: cover;
 }
 .project-info {
-  background-color: #404040;
   padding: 1rem;
   color: #fff;
 }
@@ -102,9 +110,22 @@ li {
   gap: 1rem;
 }
 .project-tech li {
+  font-size: 0.75rem;
   background-color: #fff;
   color: #000;
   padding: 0.5rem;
-  line-height: 0.9rem;
+  line-height: 1rem;
   border-radius: 8%;
+}
+.project-links {
+  font-size: 0.85rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+.project-links a {
+  color: #fff;
 }
