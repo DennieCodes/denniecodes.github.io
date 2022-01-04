@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #000;
+  background-color: #fff;
 }
 
 ul {
@@ -82,6 +82,9 @@ header nav li {
     margin-left: 2em;
   }
 }
+header nav li a {
+  color: #000;
+}
 header nav img {
   position: absolute;
   top: 1.7em;
@@ -127,48 +130,46 @@ header nav img {
 }
 
 .landing {
-  padding: 24em 7.5em;
+  padding: 1em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  /* Social Media and Professional Links Styling */
 }
-
-.landing-social {
-  width: 7.5em;
-  padding: 0.45em 0;
-}
-
 .landing-social ul {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
 }
-
-.landing-social li {
+.landing-social ul li {
   width: 1.5em;
   margin-bottom: 0.5em;
 }
-
 .landing-social-icon {
-  /* background-color: white; */
+  background-color: #404040;
+  border-radius: 15px;
 }
-
 .landing-intro {
-  width: 75em;
-  color: #fff;
+  color: #000;
 }
-
 .landing-intro h1 {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 0.25em;
 }
-
 .landing-intro h2 {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin: 0 0 1.5em;
+}
+.landing-intro p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+.landing-intro img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .projects {
@@ -177,7 +178,7 @@ header nav img {
 .projects h2 {
   font-size: 2rem;
   font-weight: 500;
-  color: #fff;
+  color: #000;
 }
 
 /* Project-directory styling */
@@ -208,9 +209,9 @@ header nav img {
 }
 .project-info h3 {
   font-size: 1.8rem;
-  color: #fff;
   font-weight: 400;
   margin: 0 0 0.5rem;
+  color: #0049b8;
 }
 .project-info p {
   font-size: 0.9rem;
@@ -225,9 +226,9 @@ header nav img {
   gap: 1rem;
 }
 .project-tech li {
-  font-size: 0.75rem;
-  background-color: #fff;
-  color: #000;
+  font-size: 0.8rem;
+  background-color: #0049b8;
+  color: #fff;
   padding: 0.5rem 1rem;
   line-height: 1rem;
   border-radius: 16px;
@@ -242,5 +243,6 @@ header nav img {
   justify-content: space-around;
 }
 .project-links a {
-  color: #fff;
+  color: #29a865;
+  border-bottom: 1px solid #29a865;
 }

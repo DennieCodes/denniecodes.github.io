@@ -37,13 +37,13 @@
   &-info {
     // background-color: $bg-color--second;
     padding: 1rem;
-    color: $text-color--main;
+    color: $text-color--contrast;
 
     & h3 {
       font-size: 1.8rem;
-      color: $text-color--main;
       font-weight: 400;
       margin: 0 0 0.5rem;
+      color: $color-blue;
     }
 
     & p {
@@ -61,9 +61,9 @@
     gap: 1rem;
 
     & li {
-      font-size: 0.75rem;
-      background-color: $text-color--main;
-      color: $bg-color--main;
+      font-size: 0.8rem;
+      background-color: $color-blue;
+      color: $text-color--contrast;
 
       padding: 0.5rem 1rem;
       line-height: 1rem;
@@ -81,7 +81,8 @@
     justify-content: space-around;
 
     & a {
-      color: $text-color--main;
+      color: $color-green;
+      border-bottom: 1px solid $color-green;
     }
   }
 }
