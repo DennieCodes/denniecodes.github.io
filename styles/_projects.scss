@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  padding-bottom: 1rem;
   background-color: $bg-color--second;
 
   &-images {
@@ -42,8 +43,8 @@
     & h3 {
       font-size: 1.8rem;
       font-weight: 400;
-      margin: 0 0 0.5rem;
-      color: $color-blue;
+      margin: 0 0 0.75rem;
+      color: $text-color--contrast;
     }
 
     & p {
@@ -53,7 +54,7 @@
   }
 
   &-tech {
-    margin-top: 1.5rem;
+    margin: 1.75rem 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

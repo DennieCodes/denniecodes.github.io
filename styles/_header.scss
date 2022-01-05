@@ -69,7 +69,7 @@ header {
       }
 
       a {
-        color: $text-color--main;
+        color: $text-color--contrast;
       }
     }
 
@@ -94,11 +94,11 @@ header {
       display: block;
     }
 
-    &:checked ~ label .res-menu-hamburger-icon {
+    &:checked ~ label .hamburger-icon {
       display: none;
     }
 
-    &:checked ~ label .res-menu-close-icon {
+    &:checked ~ label .close-icon {
       display: block;
     }
   }

@@ -83,7 +83,7 @@ header nav li {
   }
 }
 header nav li a {
-  color: #000;
+  color: #fff;
 }
 header nav img {
   position: absolute;
@@ -103,10 +103,10 @@ header nav img {
 .res-menu-input:checked ~ nav {
   display: block;
 }
-.res-menu-input:checked ~ label .res-menu-hamburger-icon {
+.res-menu-input:checked ~ label .hamburger-icon {
   display: none;
 }
-.res-menu-input:checked ~ label .res-menu-close-icon {
+.res-menu-input:checked ~ label .close-icon {
   display: block;
 }
 .res-menu-close-icon {
@@ -135,11 +135,15 @@ header nav img {
   flex-direction: column;
   /* Social Media and Professional Links Styling */
 }
+.landing-social {
+  margin-bottom: 0.75rem;
+}
 .landing-social ul {
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1rem;
 }
 .landing-social ul li {
@@ -147,8 +151,7 @@ header nav img {
   margin-bottom: 0.5em;
 }
 .landing-social-icon {
-  background-color: #404040;
-  border-radius: 15px;
+  width: 1.5rem;
 }
 .landing-intro {
   color: #000;
@@ -193,6 +196,7 @@ header nav img {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  padding-bottom: 1rem;
   background-color: #404040;
 }
 .project-images {
@@ -210,15 +214,15 @@ header nav img {
 .project-info h3 {
   font-size: 1.8rem;
   font-weight: 400;
-  margin: 0 0 0.5rem;
-  color: #0049b8;
+  margin: 0 0 0.75rem;
+  color: #fff;
 }
 .project-info p {
   font-size: 0.9rem;
   line-height: 1.4rem;
 }
 .project-tech {
-  margin-top: 1.5rem;
+  margin: 1.75rem 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

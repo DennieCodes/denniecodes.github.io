@@ -7,11 +7,14 @@
 
   /* Social Media and Professional Links Styling */
   &-social {
+    margin-bottom: 0.75rem;
+
     ul {
       padding: 0;
       margin: 0;
       display: flex;
       flex-direction: row;
+      align-items: center;
       gap: 1rem;
 
       li {
@@ -21,8 +24,9 @@
     }
 
     &-icon {
-      background-color: $bg-color--second;
-      border-radius: 15px;
+      width: 1.5rem;
+      // background-color: $bg-color--second;
+      // border-radius: 15px;
     }
   }
 
