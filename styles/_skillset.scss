@@ -1,0 +1,41 @@
+@import "./theme";
+
+.skillset {
+  &-directory {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+
+  &-card {
+    text-align: center;
+
+    & img {
+      height: 5rem;
+      width: 5rem;
+      object-fit: contain;
+
+      // Padding and dark background for white colored logos
+      .dark-bg {
+        padding: 0.25rem;
+        background-color: $bg-color--second;
+      }
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+      width: 5rem;
+      font-size: 0.9rem;
+      overflow-wrap: normal;
+    }
+  }
+}
+
+// img .dark-bg {
+//   width: calc(100% - 0.25rem);
+//   height: calc(100% - 0.25rem);
+//   padding: 0.25rem;
+//   background-color: $bg-color--second;
+// }

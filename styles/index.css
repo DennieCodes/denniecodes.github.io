@@ -1,3 +1,18 @@
+/* Global styling across Page sections */
+section {
+  padding: 1rem;
+}
+section h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000;
+}
+section h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
@@ -130,7 +145,6 @@ header nav img {
 }
 
 .landing {
-  padding: 1em;
   display: flex;
   flex-direction: column;
   /* Social Media and Professional Links Styling */
@@ -173,15 +187,6 @@ header nav img {
 .landing-intro img {
   width: 100%;
   object-fit: cover;
-}
-
-.projects {
-  margin: 0 1rem;
-}
-.projects h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #000;
 }
 
 /* Project-directory styling */
@@ -249,4 +254,31 @@ header nav img {
 .project-links a {
   color: #29a865;
   border-bottom: 1px solid #29a865;
+}
+
+.skillset-directory {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+.skillset-card {
+  text-align: center;
+}
+.skillset-card img {
+  height: 5rem;
+  width: 5rem;
+  object-fit: contain;
+}
+.skillset-card p {
+  margin: 0.5rem 0 1rem;
+  width: 5rem;
+  font-size: 0.9rem;
+  overflow-wrap: normal;
+}
+
+.dark-bg {
+  padding: 0.25rem;
+  background-color: #404040;
 }
