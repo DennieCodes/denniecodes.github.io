@@ -263,6 +263,12 @@ header nav img {
   justify-content: space-around;
   gap: 0.5rem;
 }
+.skillset-directory p {
+  flex: 0 0 100%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+}
 .skillset-card {
   text-align: center;
 }
@@ -271,14 +277,13 @@ header nav img {
   width: 5rem;
   object-fit: contain;
 }
+.skillset-card img .dark-bg {
+  padding: 0.25rem;
+  background-color: #404040;
+}
 .skillset-card p {
   margin: 0.5rem 0 1rem;
   width: 5rem;
   font-size: 0.9rem;
   overflow-wrap: normal;
-}
-
-.dark-bg {
-  padding: 0.25rem;
-  background-color: #404040;
 }

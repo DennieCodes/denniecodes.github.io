@@ -7,6 +7,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 0.5rem;
+
+    p {
+      flex: 0 0 100%;
+      font-size: 1.25rem;
+      font-weight: 500;
+      text-align: center;
+    }
   }
 
   &-card {
@@ -32,10 +39,3 @@
     }
   }
 }
-
-// img .dark-bg {
-//   width: calc(100% - 0.25rem);
-//   height: calc(100% - 0.25rem);
-//   padding: 0.25rem;
-//   background-color: $bg-color--second;
-// }
