@@ -1,0 +1,12 @@
+.about {
+  padding: 1rem;
+
+  &-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

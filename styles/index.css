@@ -150,7 +150,7 @@ header nav img {
   /* Social Media and Professional Links Styling */
 }
 .landing-social {
-  margin-bottom: 0.75rem;
+  margin: 0.25rem 0 1rem;
 }
 .landing-social ul {
   padding: 0;
@@ -263,7 +263,7 @@ header nav img {
   justify-content: space-around;
   gap: 0.5rem;
 }
-.skillset-directory p {
+.skillset-directory h3 {
   flex: 0 0 100%;
   font-size: 1.25rem;
   font-weight: 500;
@@ -277,7 +277,7 @@ header nav img {
   width: 5rem;
   object-fit: contain;
 }
-.skillset-card img .dark-bg {
+.skillset-card .dark-bg {
   padding: 0.25rem;
   background-color: #404040;
 }
@@ -286,4 +286,15 @@ header nav img {
   width: 5rem;
   font-size: 0.9rem;
   overflow-wrap: normal;
+}
+
+.about {
+  padding: 1rem;
+}
+.about-img {
+  width: 100%;
+  object-fit: cover;
+}
+.about p {
+  font-size: 0.9rem;
 }
