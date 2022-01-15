@@ -1,0 +1,43 @@
+@import "./theme";
+
+.contact-form {
+  background-color: $bg-color--second;
+  padding: 1.25rem;
+  font-size: 0.8rem;
+
+  input {
+    width: calc(100% - 8px);
+    height: 2rem;
+    margin-bottom: 1rem;
+    background-color: $bg-color--second;
+    border: 1px solid $bg-color--main;
+    color: $text-color--contrast;
+    text-indent: 0.5rem;
+  }
+
+  textarea {
+    width: calc(100% - 1.25rem);
+    height: 6rem;
+    margin-bottom: 1.25rem;
+    padding: 0.5rem;
+
+    background-color: $bg-color--second;
+    border: 1px solid $bg-color--main;
+    color: $text-color--contrast;
+  }
+
+  button {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1zrem;
+    border-radius: 10px;
+    background-color: $color-blue;
+    color: $text-color--contrast;
+    cursor: pointer;
+  }
+
+  ::placeholder {
+    color: $text-color--contrast;
+    opacity: 1;
+  }
+}

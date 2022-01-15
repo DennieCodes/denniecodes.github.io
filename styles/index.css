@@ -298,3 +298,40 @@ header nav img {
 .about p {
   font-size: 0.9rem;
 }
+
+.contact-form {
+  background-color: #404040;
+  padding: 1.25rem;
+  font-size: 0.8rem;
+}
+.contact-form input {
+  width: calc(100% - 8px);
+  height: 2rem;
+  margin-bottom: 1rem;
+  background-color: #404040;
+  border: 1px solid #fff;
+  color: #fff;
+  text-indent: 0.5rem;
+}
+.contact-form textarea {
+  width: calc(100% - 1.25rem);
+  height: 6rem;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem;
+  background-color: #404040;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.contact-form button {
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1zrem;
+  border-radius: 10px;
+  background-color: #0049b8;
+  color: #fff;
+  cursor: pointer;
+}
+.contact-form ::placeholder {
+  color: #fff;
+  opacity: 1;
+}
