@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="welcome">
       <img class="logo" src="./images/DD logo.svg" alt="Dennie Codes Logo" />
 
       <input class="res-menu-input" type="checkbox" id="res-menu" />
@@ -94,7 +94,7 @@
     </section>
 
     <!-- MY SKILLSET SECTION -->
-    <section class="skillset">
+    <section class="skillset" id="skillset">
       <h2>My Skillset</h2>
 
       <div class="skillset-directory">
@@ -185,7 +185,7 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="projects">
+    <section class="projects" id="projects">
       <h2>Featured Projects</h2>
 
       <div class="project-directory">
@@ -300,7 +300,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <h2>About Me</h2>
       <img
         class="about-img"
@@ -313,17 +313,20 @@
         websites.
       </p>
       <p>
-        As the web is continually changing, I am committed to continually
-        learning and evolving to meet its ever changing challenges.
+        As the web is continually changing, I do my best to continually learn
+        and evolve to meet its ever changing challenges.
       </p>
       <p>
         At the heart of this commitment has been my growth as a developer
         through learning technologies and methodologies that build unto my
         skillset and enhance my knowledge.
       </p>
+
+      To learn learn things that compliment and build upon what I've already
+      learned. Logical next step towards well rounded developer.
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Get in Touch</h2>
 
       <form
@@ -337,5 +340,62 @@
         <button type="submit">Send Message</button>
       </form>
     </section>
+
+    <footer>
+      <div class="brand">
+        <img src="./images/DD logo.svg" alt="Dennie Codes Logo" />
+        <h4>DennieCodes</h4>
+      </div>
+
+      <ul class="site-links">
+        <p>Site Links</p>
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#skillset">Skillset</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-social">
+        <p>Get in Touch</p>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/DennieCodes"
+              target="_blank"
+              aria-label="Github"
+              rel="noopener noreferrer"
+            >
+              <title>Github</title>
+              <img
+                class="landing-social-icon"
+                src="images/icons/GitHub.png"
+                alt="Github logo"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/DennieCodes"
+              target="_blank"
+              aria-label="Github"
+              rel="noopener noreferrer"
+            >
+              <title>Twitter</title>
+              <img
+                class="landing-social-icon"
+                src="images/icons/twitter.svg"
+                alt="Twitter logo"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="attribution">
+        <p>© 2022 - All rights reserved DennieCodes.com</p>
+        <p>Designed and built by myself using Figma and VS Code</p>
+      </div>
+    </footer>
   </body>
 </html>

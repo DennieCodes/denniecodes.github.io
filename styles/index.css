@@ -297,6 +297,7 @@ header nav img {
 }
 .about p {
   font-size: 0.9rem;
+  line-height: 1.25rem;
 }
 
 .contact-form {
@@ -334,4 +335,48 @@ header nav img {
 .contact-form ::placeholder {
   color: #fff;
   opacity: 1;
+}
+
+footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .brand {
+  flex-basis: 50%;
+}
+footer .brand img {
+  width: 4rem;
+  height: 4rem;
+}
+footer .site-links {
+  flex-basis: 50%;
+}
+footer .site-links p {
+  text-decoration: underline;
+}
+footer .site-links li {
+  height: 1.5rem;
+}
+footer .footer-social {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  gap: 1rem;
+}
+footer .footer-social p {
+  width: 18ch;
+}
+footer .footer-social ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  width: 100%;
+  align-items: center;
+}
+footer .attribution {
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 0.5rem;
 }
