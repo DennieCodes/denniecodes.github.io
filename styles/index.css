@@ -32,116 +32,34 @@ a {
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   padding: 1rem;
 }
-header .logo {
+header .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+header .brand .logo {
   width: 25px;
   height: 25px;
 }
-header .hamburger-icon {
-  width: 1.5em;
-  height: 1em;
-}
-header .close-icon {
-  display: none;
+header .brand h1 {
+  font-weight: 500;
+  font-size: 1rem;
 }
 header nav {
-  display: none;
-  position: absolute;
-  width: calc(100% + 1em);
-  height: 100vh;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
-  left: -1em;
-  top: -11px;
-  padding-left: 2.5em;
-  padding-top: 5em;
-}
-@media (min-width: 600px) {
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    width: 386px;
-    transform: translateX(25%);
-    height: unset;
-    background-color: unset;
-    left: 0;
-    top: 4.5em;
-    padding: 0;
-  }
-}
-@media (min-width: 768px) {
-  header nav {
-    position: unset;
-    justify-content: unset;
-    width: unset;
-    transform: unset;
-  }
-}
-header nav li {
-  margin-bottom: 1em;
-}
-@media (min-width: 600px) {
-  header nav li {
-    margin: 0.5em;
-    font-family: "Alata", "san-serif";
-    text-transform: none;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1440px) {
-  header nav li {
-    margin: 0;
-    margin-left: 2em;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #000;
 }
 header nav li a {
-  color: #fff;
-}
-header nav img {
-  position: absolute;
-  top: 1.7em;
-  left: 2em;
-}
-@media (min-width: 600px) {
-  header nav img {
-    display: none;
-  }
-}
-
-.res-menu-input {
-  opacity: 0;
-  z-index: 1;
-}
-.res-menu-input:checked ~ nav {
-  display: block;
-}
-.res-menu-input:checked ~ label .hamburger-icon {
-  display: none;
-}
-.res-menu-input:checked ~ label .close-icon {
-  display: block;
-}
-.res-menu-close-icon {
-  display: none;
-}
-.res-menu-label {
-  position: relative;
-  margin-left: auto;
-  cursor: pointer;
-  z-index: 2;
-}
-.res-menu-label img {
-  position: absolute;
-  top: 0;
-  left: -1em;
-}
-@media (min-width: 600px) {
-  .res-menu-label img {
-    display: none;
-  }
+  color: #000;
+  text-decoration: underline;
 }
 
 .landing {
