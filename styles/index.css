@@ -1,21 +1,43 @@
 /* Global styling across Page sections */
-section {
-  padding: 1rem;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
 }
-section h2 {
+
+section,
+header,
+footer {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 376px) {
+  section,
+header,
+footer {
+    padding: 1rem clamp(1rem, calc(100% - 375px), 2.5rem);
+  }
+}
+
+h2 {
   font-size: 2rem;
   font-weight: 500;
   color: #000;
 }
-section h3 {
+@media (min-width: 376px) {
+  h2 {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+  }
+}
+
+h3 {
   font-size: 1.5rem;
   font-weight: 500;
   color: #000;
 }
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #fff;
+@media (min-width: 376px) {
+  h3 {
+    font-size: clamp(1.5rem, 8vw, 2rem);
+  }
 }
 
 ul {
@@ -34,7 +56,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
 }
 header .brand {
   display: flex;
@@ -45,6 +66,12 @@ header .brand {
 header .brand .logo {
   width: 25px;
   height: 25px;
+}
+@media (min-width: 376px) {
+  header .brand .logo {
+    width: clamp(25px, 9vw, 50px);
+    height: clamp(25px, 9vw, 50px);
+  }
 }
 header .brand h1 {
   font-weight: 500;
@@ -93,10 +120,21 @@ header nav li a {
   font-weight: 700;
   margin: 0 0 0.25em;
 }
+@media (min-width: 376px) {
+  .landing-intro h1 {
+    font-size: clamp(2.5rem, 10vw, 3rem);
+  }
+}
 .landing-intro h2 {
   font-size: 1.25rem;
   font-weight: 500;
   margin: 0 0 1.5em;
+}
+@media (min-width: 376px) {
+  .landing-intro h2 {
+    font-size: clamp(1.25rem, 10vw, 2rem);
+    border: 2px red;
+  }
 }
 .landing-intro p {
   font-size: 1rem;
@@ -127,6 +165,11 @@ header nav li a {
   flex-direction: column;
   padding: 0.5rem;
 }
+@media (min-width: 376px) {
+  .project-images {
+    padding: 1rem;
+  }
+}
 .project-snapshot {
   object-fit: cover;
 }
@@ -140,9 +183,19 @@ header nav li a {
   margin: 0 0 0.75rem;
   color: #fff;
 }
+@media (min-width: 480px) {
+  .project-info h3 {
+    margin: 0 0 1.15rem;
+  }
+}
 .project-info p {
   font-size: 0.9rem;
   line-height: 1.4rem;
+}
+@media (min-width: 480px) {
+  .project-info p {
+    font-size: 1rem;
+  }
 }
 .project-tech {
   margin: 1.75rem 0;
@@ -152,6 +205,11 @@ header nav li a {
   justify-content: center;
   gap: 1rem;
 }
+@media (min-width: 480px) {
+  .project-tech {
+    margin: 2rem 0;
+  }
+}
 .project-tech li {
   font-size: 0.8rem;
   background-color: #0049b8;
@@ -159,6 +217,12 @@ header nav li a {
   padding: 0.5rem 1rem;
   line-height: 1rem;
   border-radius: 16px;
+}
+@media (min-width: 480px) {
+  .project-tech li {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
 }
 .project-links {
   font-size: 0.85rem;
@@ -168,6 +232,11 @@ header nav li a {
   flex-wrap: wrap;
   gap: 0.5rem;
   justify-content: space-around;
+}
+@media (min-width: 480px) {
+  .project-links {
+    font-size: 1rem;
+  }
 }
 .project-links a {
   color: #29a865;
@@ -180,6 +249,16 @@ header nav li a {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 0.5rem;
+}
+@media (min-width: 376px) {
+  .skillset-directory {
+    gap: 1rem;
+  }
+}
+@media (min-width: 480px) {
+  .skillset-directory {
+    gap: 1.75rem;
+  }
 }
 .skillset-directory h3 {
   flex: 0 0 100%;
@@ -205,10 +284,12 @@ header nav li a {
   font-size: 0.9rem;
   overflow-wrap: normal;
 }
-
-.about {
-  padding: 1rem;
+@media (min-width: 376px) {
+  .skillset-card p {
+    font-weight: 400;
+  }
 }
+
 .about-img {
   width: 100%;
   object-fit: cover;
@@ -232,6 +313,11 @@ header nav li a {
   color: #fff;
   text-indent: 0.5rem;
 }
+@media (min-width: 480px) {
+  .contact-form input {
+    font-size: 1rem;
+  }
+}
 .contact-form textarea {
   width: calc(100% - 1.25rem);
   height: 6rem;
@@ -241,11 +327,16 @@ header nav li a {
   border: 1px solid #fff;
   color: #fff;
 }
+@media (min-width: 480px) {
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+}
 .contact-form button {
   width: 10rem;
   height: 2.5rem;
-  font-size: 1zrem;
-  border-radius: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
   background-color: #0049b8;
   color: #fff;
   cursor: pointer;
@@ -256,12 +347,15 @@ header nav li a {
 }
 
 footer {
-  padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 0;
 }
 footer .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-basis: 50%;
 }
 footer .brand img {
@@ -269,13 +363,21 @@ footer .brand img {
   height: 4rem;
 }
 footer .site-links {
-  flex-basis: 50%;
+  margin-top: 0;
+  flex-basis: 40%;
+  margin-left: 10%;
 }
 footer .site-links p {
-  text-decoration: underline;
+  margin-top: 0;
+  font-weight: 500;
+  border-bottom: 1px solid #000;
 }
 footer .site-links li {
   height: 1.5rem;
+}
+footer .site-links li a {
+  text-decoration: underline;
+  color: #000;
 }
 footer .footer-social {
   display: flex;

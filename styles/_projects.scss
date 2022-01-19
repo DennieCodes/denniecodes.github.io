@@ -1,3 +1,4 @@
+@import "./mixins";
 @import "./theme";
 
 /* Project-directory styling */
@@ -20,6 +21,10 @@
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
+
+    @include mobile-expand {
+      padding: 1rem;
+    }
   }
 
   &-snapshot {
@@ -36,11 +41,19 @@
       font-weight: 400;
       margin: 0 0 0.75rem;
       color: $text-color--contrast;
+
+      @include mobile-landscape {
+        margin: 0 0 1.15rem;
+      }
     }
 
     & p {
       font-size: 0.9rem;
       line-height: 1.4rem;
+
+      @include mobile-landscape {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -52,6 +65,10 @@
     justify-content: center;
     gap: 1rem;
 
+    @include mobile-landscape {
+      margin: 2rem 0;
+    }
+
     & li {
       font-size: 0.8rem;
       background-color: $color-blue;
@@ -60,6 +77,11 @@
       padding: 0.5rem 1rem;
       line-height: 1rem;
       border-radius: 16px;
+
+      @include mobile-landscape {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+      }
     }
   }
 
@@ -71,6 +93,10 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: space-around;
+
+    @include mobile-landscape {
+      font-size: 1rem;
+    }
 
     & a {
       color: $color-green;

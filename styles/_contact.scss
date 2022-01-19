@@ -1,3 +1,4 @@
+@import "./mixins";
 @import "./theme";
 
 .contact-form {
@@ -13,6 +14,10 @@
     border: 1px solid $bg-color--main;
     color: $text-color--contrast;
     text-indent: 0.5rem;
+
+    @include mobile-landscape {
+      font-size: 1rem;
+    }
   }
 
   textarea {
@@ -24,13 +29,17 @@
     background-color: $bg-color--second;
     border: 1px solid $bg-color--main;
     color: $text-color--contrast;
+
+    @include mobile-landscape {
+      font-size: 1rem;
+    }
   }
 
   button {
     width: 10rem;
     height: 2.5rem;
-    font-size: 1zrem;
-    border-radius: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
     background-color: $color-blue;
     color: $text-color--contrast;
     cursor: pointer;

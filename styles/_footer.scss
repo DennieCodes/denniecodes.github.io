@@ -1,14 +1,17 @@
 @import "./theme";
 
 footer {
-  padding: 1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 0;
 
   // background-color: $bg-color--second;
 
   .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-basis: 50%;
 
     img {
@@ -18,14 +21,23 @@ footer {
   }
 
   .site-links {
-    flex-basis: 50%;
+    margin-top: 0;
+    flex-basis: 40%;
+    margin-left: 10%;
 
     p {
-      text-decoration: underline;
+      margin-top: 0;
+      font-weight: 500;
+      border-bottom: 1px solid $text-color--main;
     }
 
     li {
       height: 1.5rem;
+
+      a {
+        text-decoration: underline;
+        color: $text-color--main;
+      }
     }
   }
 

@@ -1,3 +1,4 @@
+@import "./mixins";
 @import "./theme";
 
 .landing {
@@ -36,12 +37,21 @@
       font-size: 2.5rem;
       font-weight: 700;
       margin: 0 0 0.25em;
+
+      @include mobile-expand {
+        font-size: clamp(2.5rem, 10vw, 3rem);
+      }
     }
 
-    h2 {
+    & h2 {
       font-size: 1.25rem;
       font-weight: 500;
       margin: 0 0 1.5em;
+
+      @include mobile-expand {
+        font-size: clamp(1.25rem, 10vw, 2rem);
+        border: 2px red;
+      }
     }
 
     p {

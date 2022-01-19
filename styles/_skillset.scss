@@ -1,12 +1,22 @@
+@import "./mixins";
 @import "./theme";
 
 .skillset {
   &-directory {
+    // background-color: $dark-grey;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 0.5rem;
+
+    @include mobile-expand {
+      gap: 1rem;
+    }
+
+    @include mobile-landscape {
+      gap: 1.75rem;
+    }
 
     h3 {
       flex: 0 0 100%;
@@ -36,6 +46,10 @@
       width: 5rem;
       font-size: 0.9rem;
       overflow-wrap: normal;
+
+      @include mobile-expand {
+        font-weight: 400;
+      }
     }
   }
 }
