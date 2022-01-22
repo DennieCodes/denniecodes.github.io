@@ -5,7 +5,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  // align-items: center;
 
   background-color: $light-grey;
 
@@ -73,6 +72,14 @@ header {
       justify-content: space-between;
       transform: unset;
       margin-top: 1.25rem;
+    }
+
+    @include desktop-small {
+      width: 50%;
+    }
+
+    @include desktop {
+      width: 35%;
     }
 
     & li {

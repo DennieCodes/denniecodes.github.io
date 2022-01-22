@@ -16,6 +16,10 @@ footer {
   @include mobile-expand {
     padding: 1rem clamp(1rem, calc(100% - 375px), 2.5rem);
   }
+
+  @include desktop-small {
+    padding: 1rem 5rem;
+  }
 }
 
 section {
@@ -29,6 +33,10 @@ section {
 
   @include desktop-small {
     padding-bottom: 4rem;
+  }
+
+  @include desktop {
+    padding: 1rem 6.5rem 4rem;
   }
 }
 

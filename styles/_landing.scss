@@ -43,6 +43,10 @@
     color: $text-color--main;
     margin-bottom: 2rem;
 
+    @include desktop {
+      padding-right: 2rem;
+    }
+
     h1 {
       font-size: 2.25rem;
       margin: 0 0 0.25em;
@@ -71,6 +75,10 @@
       font-size: 1rem;
       line-height: 1.25rem;
       max-width: 60ch;
+
+      @include desktop-wide {
+        line-height: 1.5rem;
+      }
     }
 
     img {

@@ -5,10 +5,16 @@
 .project-directory {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
 
   @include tablet-landscape {
     flex-direction: row;
+    gap: 2.5rem;
+  }
+
+  @include desktop {
+    gap: 4rem;
   }
 }
 
@@ -23,7 +29,19 @@
   border-radius: 5px;
 
   @include tablet-landscape {
-    max-width: 50%;
+    max-width: 47%;
+  }
+
+  @include desktop-small {
+    padding: 1rem;
+  }
+
+  @include desktop {
+    width: 45%;
+  }
+
+  @include desktop-wide {
+    max-width: 40%;
   }
 
   &-images {

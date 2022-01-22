@@ -15,6 +15,11 @@
     margin: 0 auto;
   }
 
+  @include desktop-small {
+    padding: 2rem;
+    max-width: 60%;
+  }
+
   input {
     width: calc(100% - 8px);
     height: 2rem;

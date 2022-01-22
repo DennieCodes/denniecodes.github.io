@@ -4,10 +4,6 @@
 .skillset {
   background-color: $light-grey;
 
-  // h2 {
-  //   // margin-bottom: 0.5rem;
-  // }
-
   &-directory {
     display: flex;
     flex-direction: column;
@@ -25,6 +21,11 @@
 
     @include tablet-landscape {
       flex-direction: row;
+      gap: 2.5rem;
+    }
+
+    @include desktop {
+      row-gap: 4rem;
     }
 
     h3 {
@@ -50,6 +51,15 @@
 
     @include tablet-landscape {
       max-width: 45%;
+    }
+
+    @include desktop-small {
+      padding: 1rem;
+      max-width: 43%;
+    }
+
+    @include desktop {
+      max-width: 26%;
     }
   }
 

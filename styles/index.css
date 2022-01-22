@@ -17,6 +17,13 @@ footer {
     padding: 1rem clamp(1rem, calc(100% - 375px), 2.5rem);
   }
 }
+@media (min-width: 1024px) {
+  section,
+header,
+footer {
+    padding: 1rem 5rem;
+  }
+}
 
 @media (min-width: 480px) {
   section {
@@ -31,6 +38,11 @@ footer {
 @media (min-width: 1024px) {
   section {
     padding-bottom: 4rem;
+  }
+}
+@media (min-width: 1440px) {
+  section {
+    padding: 1rem 6.5rem 4rem;
   }
 }
 
@@ -159,6 +171,16 @@ header nav {
     margin-top: 1.25rem;
   }
 }
+@media (min-width: 1024px) {
+  header nav {
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  header nav {
+    width: 35%;
+  }
+}
 header nav li {
   margin-bottom: 1em;
 }
@@ -265,6 +287,11 @@ header nav img {
   color: #000;
   margin-bottom: 2rem;
 }
+@media (min-width: 1440px) {
+  .landing-intro {
+    padding-right: 2rem;
+  }
+}
 .landing-intro h1 {
   font-size: 2.25rem;
   margin: 0 0 0.25em;
@@ -295,6 +322,11 @@ header nav img {
   line-height: 1.25rem;
   max-width: 60ch;
 }
+@media (min-width: 1920px) {
+  .landing-intro p {
+    line-height: 1.5rem;
+  }
+}
 .landing-intro img {
   width: 100%;
   object-fit: cover;
@@ -322,11 +354,18 @@ header nav img {
 .project-directory {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
 }
 @media (min-width: 768px) {
   .project-directory {
     flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .project-directory {
+    gap: 4rem;
   }
 }
 
@@ -341,7 +380,22 @@ header nav img {
 }
 @media (min-width: 768px) {
   .project {
-    max-width: 50%;
+    max-width: 47%;
+  }
+}
+@media (min-width: 1024px) {
+  .project {
+    padding: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .project {
+    width: 45%;
+  }
+}
+@media (min-width: 1920px) {
+  .project {
+    max-width: 40%;
   }
 }
 .project-images {
@@ -450,6 +504,12 @@ header nav img {
 @media (min-width: 768px) {
   .skillset-directory {
     flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .skillset-directory {
+    row-gap: 4rem;
   }
 }
 .skillset-directory h3 {
@@ -473,6 +533,17 @@ header nav img {
 @media (min-width: 768px) {
   .skillset-subgroup {
     max-width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .skillset-subgroup {
+    padding: 1rem;
+    max-width: 43%;
+  }
+}
+@media (min-width: 1440px) {
+  .skillset-subgroup {
+    max-width: 26%;
   }
 }
 .skillset-card {
@@ -514,6 +585,11 @@ header nav img {
     gap: 2rem;
   }
 }
+@media (min-width: 1440px) {
+  .about-content {
+    gap: 4rem;
+  }
+}
 .about-img {
   width: 100%;
   object-fit: cover;
@@ -526,6 +602,11 @@ header nav img {
 @media (min-width: 768px) {
   .about-img {
     width: 50%;
+  }
+}
+@media (min-width: 1920px) {
+  .about-img {
+    width: 35%;
   }
 }
 .about-info {
@@ -547,6 +628,12 @@ header nav img {
   font-size: 0.9rem;
   line-height: 1.25rem;
 }
+@media (min-width: 1920px) {
+  .about-info p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
 @media (min-width: 768px) {
   .about-info p:first-child {
     margin-top: 0;
@@ -567,6 +654,12 @@ header nav img {
   .contact-form {
     max-width: 75%;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-form {
+    padding: 2rem;
+    max-width: 60%;
   }
 }
 .contact-form input {
