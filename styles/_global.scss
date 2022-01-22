@@ -3,24 +3,30 @@
 
 /* Global styling across Page sections */
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: $bg-color--main;
+  font-family: $font-text, sans-serif;
+  background-color: $off-white;
 }
 
 section,
 header,
 footer {
   padding: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 
   @include mobile-expand {
     padding: 1rem clamp(1rem, calc(100% - 375px), 2.5rem);
   }
 }
 
+h1 {
+  font-family: $font-title, serif;
+  font-weight: 500;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 500;
+  font-family: $font-title, serif;
   color: $text-color--main;
 
   @include mobile-expand {
@@ -48,4 +54,21 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.button-cta {
+  width: 10rem;
+  // padding: 0.5rem 2rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: $color-orange;
+  color: $text-color--contrast;
+  cursor: pointer;
+}
+
+.button-secondary-cta {
+  background-color: $bg-color--main;
+  border: 2px solid $color-orange;
+  color: $color-orange;
 }

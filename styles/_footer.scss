@@ -4,9 +4,9 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 0;
+  margin: 1.5rem 0 0;
 
-  // background-color: $bg-color--second;
+  background-color: $light-grey;
 
   .brand {
     display: flex;
@@ -61,6 +61,7 @@ footer {
   }
 
   .attribution {
+    width: 100%;
     text-align: center;
     font-size: 0.75rem;
     line-height: 0.5rem;

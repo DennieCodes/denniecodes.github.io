@@ -16,7 +16,7 @@
   }
 }
 
-@mixin tablet {
+@mixin tablet-landscape {
   @media (min-width: 768px) {
     @content;
   }

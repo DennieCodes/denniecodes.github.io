@@ -1,14 +1,14 @@
 /* Global styling across Page sections */
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #fff;
+  background-color: #f9f9f9;
 }
 
 section,
 header,
 footer {
   padding: 1rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 @media (min-width: 376px) {
   section,
@@ -18,9 +18,15 @@ footer {
   }
 }
 
+h1 {
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 500;
+  font-family: "Noto Serif", serif;
   color: #000;
 }
 @media (min-width: 376px) {
@@ -52,10 +58,27 @@ a {
   text-decoration: none;
 }
 
+.button-cta {
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  background-color: #de6d1f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-secondary-cta {
+  background-color: #fff;
+  border: 2px solid #de6d1f;
+  color: #de6d1f;
+}
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #e4e4e4;
 }
 header .brand {
   display: flex;
@@ -86,13 +109,26 @@ header nav {
 }
 header nav li a {
   color: #000;
-  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1.15rem;
+  font-family: "Crimson Pro", serif;
 }
 
 .landing {
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
   /* Social Media and Professional Links Styling */
+}
+@media (min-width: 1024px) {
+  .landing {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .landing {
+    padding: 5rem 2.5rem;
+  }
 }
 .landing-social {
   margin: 0.25rem 0 1rem;
@@ -114,21 +150,26 @@ header nav li a {
 }
 .landing-intro {
   color: #000;
+  margin-bottom: 2rem;
 }
 .landing-intro h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2.25rem;
   margin: 0 0 0.25em;
 }
 @media (min-width: 376px) {
   .landing-intro h1 {
-    font-size: clamp(2.5rem, 10vw, 3rem);
+    font-size: clamp(2.5rem, 10vw, 3.75rem);
+  }
+}
+@media (min-width: 1024px) {
+  .landing-intro h1 {
+    font-size: 3rem;
   }
 }
 .landing-intro h2 {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 500;
-  margin: 0 0 1.5em;
+  margin: 0 0 1.15em;
 }
 @media (min-width: 376px) {
   .landing-intro h2 {
@@ -139,10 +180,29 @@ header nav li a {
 .landing-intro p {
   font-size: 1rem;
   line-height: 1.25rem;
+  max-width: 60ch;
 }
 .landing-intro img {
   width: 100%;
   object-fit: cover;
+}
+.landing-cta {
+  margin: 4rem 0 2.5rem;
+  font-weight: 500;
+}
+.landing-cta a {
+  padding: 0.5rem 1rem;
+}
+.landing-cta a:first-child {
+  margin-right: 1rem;
+}
+.landing-hero-image {
+  object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .landing-hero-image {
+    width: 60%;
+  }
 }
 
 /* Project-directory styling */
@@ -150,6 +210,11 @@ header nav li a {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .project-directory {
+    flex-direction: row;
+  }
 }
 
 /* Project (individual item) styling */
@@ -159,11 +224,17 @@ header nav li a {
   margin-top: 1rem;
   padding-bottom: 1rem;
   background-color: #404040;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .project {
+    max-width: 50%;
+  }
 }
 .project-images {
   display: flex;
   flex-direction: column;
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 @media (min-width: 376px) {
   .project-images {
@@ -239,16 +310,19 @@ header nav li a {
   }
 }
 .project-links a {
-  color: #29a865;
-  border-bottom: 1px solid #29a865;
+  color: #1fde5d;
+  border-bottom: 1px solid #1fde5d;
 }
 
+.skillset {
+  background-color: #e4e4e4;
+}
 .skillset-directory {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 @media (min-width: 376px) {
   .skillset-directory {
@@ -260,13 +334,36 @@ header nav li a {
     gap: 1.75rem;
   }
 }
+@media (min-width: 768px) {
+  .skillset-directory {
+    flex-direction: row;
+  }
+}
 .skillset-directory h3 {
-  flex: 0 0 100%;
+  width: 100%;
   font-size: 1.25rem;
+  height: 1.25rem;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 0.75rem;
+}
+.skillset-subgroup {
+  background-color: #f9f9f9;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .skillset-subgroup {
+    max-width: 45%;
+  }
 }
 .skillset-card {
+  flex-basis: 6rem;
   text-align: center;
 }
 .skillset-card img {
@@ -280,29 +377,84 @@ header nav li a {
 }
 .skillset-card p {
   margin: 0.5rem 0 1rem;
-  width: 5rem;
   font-size: 0.9rem;
   overflow-wrap: normal;
 }
-@media (min-width: 376px) {
+@media (min-width: 480px) {
   .skillset-card p {
-    font-weight: 400;
+    font-size: 1rem;
   }
 }
 
+.about {
+  background-color: #e4e4e4;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
 .about-img {
   width: 100%;
   object-fit: cover;
 }
-.about p {
+@media (min-width: 480px) {
+  .about-img {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .about-img {
+    width: 50%;
+  }
+}
+.about-info {
+  margin-top: 1.25rem;
+}
+@media (min-width: 480px) {
+  .about-info {
+    max-width: 90%;
+  }
+}
+@media (min-width: 768px) {
+  .about-info {
+    margin-top: 0;
+  }
+}
+.about-info p {
+  margin: 1rem 0;
+  max-width: 60ch;
   font-size: 0.9rem;
   line-height: 1.25rem;
+}
+@media (min-width: 768px) {
+  .about-info p:first-child {
+    margin-top: 0;
+  }
 }
 
 .contact-form {
   background-color: #404040;
   padding: 1.25rem;
   font-size: 0.8rem;
+}
+@media (min-width: 600px) {
+  .contact-form {
+    margin: 0 5%;
+  }
+}
+@media (min-width: 768px) {
+  .contact-form {
+    max-width: 75%;
+    margin: 0 auto;
+  }
 }
 .contact-form input {
   width: calc(100% - 8px);
@@ -333,12 +485,7 @@ header nav li a {
   }
 }
 .contact-form button {
-  width: 10rem;
-  height: 2.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  background-color: #0049b8;
-  color: #fff;
+  padding: 0;
   cursor: pointer;
 }
 .contact-form ::placeholder {
@@ -350,7 +497,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 0;
+  margin: 1.5rem 0 0;
+  background-color: #e4e4e4;
 }
 footer .brand {
   display: flex;
@@ -396,6 +544,7 @@ footer .footer-social ul {
   align-items: center;
 }
 footer .attribution {
+  width: 100%;
   text-align: center;
   font-size: 0.75rem;
   line-height: 0.5rem;

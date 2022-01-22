@@ -6,6 +6,10 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @include tablet-landscape {
+    flex-direction: row;
+  }
 }
 
 /* Project (individual item) styling */
@@ -16,11 +20,16 @@
   margin-top: 1rem;
   padding-bottom: 1rem;
   background-color: $bg-color--second;
+  border-radius: 5px;
+
+  @include tablet-landscape {
+    max-width: 50%;
+  }
 
   &-images {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 0.75rem;
 
     @include mobile-expand {
       padding: 1rem;

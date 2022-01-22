@@ -4,6 +4,15 @@
 .landing {
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
+
+  @include desktop-small {
+    flex-direction: row;
+  }
+
+  @include desktop-small {
+    padding: 5rem 2.5rem;
+  }
 
   /* Social Media and Professional Links Styling */
   &-social {
@@ -32,21 +41,25 @@
 
   &-intro {
     color: $text-color--main;
+    margin-bottom: 2rem;
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
+      font-size: 2.25rem;
       margin: 0 0 0.25em;
 
       @include mobile-expand {
-        font-size: clamp(2.5rem, 10vw, 3rem);
+        font-size: clamp(2.5rem, 10vw, 3.75rem);
+      }
+
+      @include desktop-small {
+        font-size: 3rem;
       }
     }
 
     & h2 {
-      font-size: 1.25rem;
+      font-size: 1.4rem;
       font-weight: 500;
-      margin: 0 0 1.5em;
+      margin: 0 0 1.15em;
 
       @include mobile-expand {
         font-size: clamp(1.25rem, 10vw, 2rem);
@@ -57,11 +70,35 @@
     p {
       font-size: 1rem;
       line-height: 1.25rem;
+      max-width: 60ch;
     }
 
     img {
       width: 100%;
       object-fit: cover;
+    }
+  }
+
+  &-cta {
+    margin: 4rem 0 2.5rem;
+
+    // margin: 2.25rem 0 3rem;
+    font-weight: 500;
+
+    a {
+      padding: 0.5rem 1rem;
+    }
+
+    a:first-child {
+      margin-right: 1rem;
+    }
+  }
+
+  &-hero-image {
+    object-fit: cover;
+
+    @include desktop-small {
+      width: 60%;
     }
   }
 }

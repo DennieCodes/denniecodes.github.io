@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;500;600;700&family=Noto+Serif:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <title>Dennie Dev Portfolio</title>
@@ -21,23 +21,7 @@
         <h1>DennieCodes</h1>
       </div>
 
-      <!-- <input class="res-menu-input" type="checkbox" id="res-menu" />
-      <label class="res-menu-label" for="res-menu">
-        <img
-          class="hamburger-icon"
-          src="./images/icons/icon-hamburger.svg"
-          alt="Hamburger mobile icon"
-        />
-
-        <img
-          class="close-icon"
-          src="./images/icons/icon-close.svg"
-          alt="Close mobile icon"
-        />
-      </label> -->
-
       <nav>
-        <!-- <img class="logo" src="./images/DD logo.svg" alt="Dennie Codes Logo" /> -->
         <li><a href="#landing">Home</a></li>
         <li><a href="#skillset">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -54,44 +38,52 @@
           I create solutions to web designs and challenges using a
           detail-oriented problem solving approach.
         </p>
-      </div>
 
-      <div class="landing-social">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/DennieCodes"
-              target="_blank"
-              aria-label="Github"
-              rel="noopener noreferrer"
-            >
-              <title>Github</title>
-              <img
-                class="landing-social-icon"
-                src="images/icons/GitHub.png"
-                alt="Github logo"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/DennieCodes"
-              target="_blank"
-              aria-label="Github"
-              rel="noopener noreferrer"
-            >
-              <title>Twitter</title>
-              <img
-                class="landing-social-icon"
-                src="images/icons/twitter.svg"
-                alt="Twitter logo"
-              />
-            </a>
-          </li>
-        </ul>
+        <!-- <div class="landing-social">
+          <ul>
+            <li>
+              <a
+                href="https://github.com/DennieCodes"
+                target="_blank"
+                aria-label="Github"
+                rel="noopener noreferrer"
+              >
+                <title>Github</title>
+                <img
+                  class="landing-social-icon"
+                  src="images/icons/GitHub.png"
+                  alt="Github logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/DennieCodes"
+                target="_blank"
+                aria-label="Github"
+                rel="noopener noreferrer"
+              >
+                <title>Twitter</title>
+                <img
+                  class="landing-social-icon"
+                  src="images/icons/twitter.svg"
+                  alt="Twitter logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </div> -->
+
+        <div class="landing-cta">
+          <a class="button-cta" href="#contact">Get in Touch</a>
+          <a class="button-cta button-secondary-cta" href="#skillset"
+            >Learn more
+          </a>
+        </div>
       </div>
 
       <img
+        class="landing-hero-image"
         src="./images/Web Developer Hero.png"
         alt="Web Developer Vector illustration by Vecteezy"
       />
@@ -102,88 +94,98 @@
       <h2>My Skillset</h2>
 
       <div class="skillset-directory">
-        <div class="skillset-card">
-          <img src="./images/icons/HTML5_Badge.svg" alt="Html 5 Logo" />
-          <p>HTML5</p>
+        <div class="skillset-subgroup">
+          <h3>Foundational Skills</h3>
+          <div class="skillset-card">
+            <img src="./images/icons/HTML5_Badge.svg" alt="Html 5 Logo" />
+            <p>HTML5</p>
+          </div>
+
+          <div class="skillset-card">
+            <img src="./images/icons/CSS3_logo.svg" alt="CSS 3 Logo" />
+            <p>CSS3</p>
+          </div>
+
+          <div class="skillset-card">
+            <img src="./images/icons/javascript.svg" alt="Javascript Logo" />
+            <p>Javascript</p>
+          </div>
+
+          <div class="skillset-card">
+            <img src="./images/icons/react.svg" alt="react Logo" />
+            <p>ReactJS</p>
+          </div>
+
+          <div class="skillset-card">
+            <img src="./images/icons/sass.png" alt="Sass Logo" />
+            <p>Sass</p>
+          </div>
+
+          <div class="skillset-card">
+            <img
+              src="./images/icons/styled-components.svg"
+              alt="styled-components Logo"
+            />
+            <p>Styled Components</p>
+          </div>
+
+          <div class="skillset-card">
+            <img class="dark-bg" src="./images/icons/BEM.svg" alt="BEM Logo" />
+            <p>BEM methodology</p>
+          </div>
+
+          <div class="skillset-card">
+            <img
+              src="./images/icons/Mobile First.svg"
+              alt="Mobile First Logo"
+            />
+            <p>Mobile First</p>
+          </div>
+
+          <div class="skillset-card">
+            <img
+              src="./images/icons/Responsive Design.svg"
+              alt="Responsive Design Logo"
+            />
+            <p>Fully Responsive</p>
+          </div>
         </div>
 
-        <div class="skillset-card">
-          <img src="./images/icons/CSS3_logo.svg" alt="CSS 3 Logo" />
-          <p>CSS3</p>
+        <div class="skillset-subgroup">
+          <h3>My Tools of the Trade</h3>
+
+          <div class="skillset-card">
+            <img src="./images/icons/vscode.svg" alt="VSCode Logo" />
+            <p>VSCode</p>
+          </div>
+
+          <div class="skillset-card">
+            <img src="./images/icons/Figma-logo.svg" alt="Figma Logo" />
+            <p>Figma</p>
+          </div>
+
+          <div class="skillset-card">
+            <img src="./images/icons/Github.png" alt="Github Logo" />
+            <p>Github</p>
+          </div>
+
+          <div class="skillset-card">
+            <img src="./images/icons/postman.svg" alt="Postman Logo" />
+            <p>Postman</p>
+          </div>
+
+          <div class="skillset-card">
+            <img src="./images/icons/Photoshop.svg" alt="Photoshop Logo" />
+            <p>Photoshop</p>
+          </div>
         </div>
 
-        <div class="skillset-card">
-          <img src="./images/icons/javascript.svg" alt="Javascript Logo" />
-          <p>Javascript</p>
-        </div>
-
-        <div class="skillset-card">
-          <img src="./images/icons/react.svg" alt="react Logo" />
-          <p>ReactJS</p>
-        </div>
-
-        <div class="skillset-card">
-          <img src="./images/icons/sass.png" alt="Sass Logo" />
-          <p>Sass</p>
-        </div>
-
-        <div class="skillset-card">
-          <img
-            src="./images/icons/styled-components.svg"
-            alt="styled-components Logo"
-          />
-          <p>Styled Components</p>
-        </div>
-
-        <div class="skillset-card">
-          <img class="dark-bg" src="./images/icons/BEM.svg" alt="BEM Logo" />
-          <p>BEM methodology</p>
-        </div>
-
-        <div class="skillset-card">
-          <img src="./images/icons/Mobile First.svg" alt="Mobile First Logo" />
-          <p>Mobile First</p>
-        </div>
-
-        <div class="skillset-card">
-          <img
-            src="./images/icons/Responsive Design.svg"
-            alt="Responsive Design Logo"
-          />
-          <p>Fully Responsive</p>
-        </div>
-
-        <h3>My Tools of the Trade</h3>
-
-        <div class="skillset-card">
-          <img src="./images/icons/vscode.svg" alt="VSCode Logo" />
-          <p>VSCode</p>
-        </div>
-
-        <div class="skillset-card">
-          <img src="./images/icons/Figma-logo.svg" alt="Figma Logo" />
-          <p>Figma</p>
-        </div>
-
-        <div class="skillset-card">
-          <img src="./images/icons/Github.png" alt="Github Logo" />
-          <p>Github</p>
-        </div>
-
-        <div class="skillset-card">
-          <img src="./images/icons/postman.svg" alt="Postman Logo" />
-          <p>Postman</p>
-        </div>
-
-        <div class="skillset-card">
-          <img src="./images/icons/Photoshop.svg" alt="Photoshop Logo" />
-          <p>Photoshop</p>
-        </div>
-
-        <h3>Currently Learning</h3>
-        <div class="skillset-card">
-          <img src="./images/icons/Typescript.svg" alt="Typescript Logo" />
-          <p>Typescript</p>
+        <div class="skillset-subgroup">
+          <h3>Currently Learning</h3>
+          <div class="skillset-card">
+            <img src="./images/icons/Typescript.svg" alt="Typescript Logo" />
+            <p>Typescript</p>
+          </div>
         </div>
       </div>
     </section>
@@ -307,28 +309,30 @@
     <!-- ABOUT SECTION -->
     <section class="about" id="about">
       <h2>About Me</h2>
-      <img
-        class="about-img"
-        src="images/About Me.png"
-        alt="Image of me in Tuscany"
-      />
-      <p>
-        I am an enthusiastic self-taught developer who enjoys solving problems
-        using code, and creating interactive, accessible and responsive
-        websites.
-      </p>
-      <p>
-        As the web is continually changing, I do my best to continually learn
-        and evolve to meet its ever changing challenges.
-      </p>
-      <p>
-        At the heart of this commitment has been my growth as a developer
-        through learning technologies and methodologies that build unto my
-        skillset and enhance my knowledge.
-      </p>
-
-      <!-- To learn learn things that compliment and build upon what I've already
-      learned. Logical next step towards well rounded developer as a progression -->
+      <div class="about-content">
+        <img
+          class="about-img"
+          src="images/About Me.png"
+          alt="Image of me in Tuscany"
+        />
+        <div class="about-info">
+          <p>
+            I am an enthusiastic self-taught developer who enjoys solving
+            problems using code, and creating interactive, accessible and
+            responsive websites.
+          </p>
+          <p>
+            As the web is continually changing, I do my best to continually
+            learn and evolve to meet its ever changing challenges.
+          </p>
+          <p>
+            At the heart of this commitment has been this idea to chart my own
+            growth as a developer through learning technologies and
+            methodologies that would build upon and compliment what I've
+            learned.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT SECTION -->
@@ -343,7 +347,7 @@
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit">Send Message</button>
+        <button class="button-cta" type="submit">Send Message</button>
       </form>
     </section>
 

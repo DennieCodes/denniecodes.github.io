@@ -6,6 +6,15 @@
   padding: 1.25rem;
   font-size: 0.8rem;
 
+  @include tablet-portrait {
+    margin: 0 5%;
+  }
+
+  @include tablet-landscape {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
   input {
     width: calc(100% - 8px);
     height: 2rem;
@@ -36,12 +45,7 @@
   }
 
   button {
-    width: 10rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    background-color: $color-blue;
-    color: $text-color--contrast;
+    padding: 0;
     cursor: pointer;
   }
 

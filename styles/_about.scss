@@ -1,11 +1,56 @@
+@import "./mixins";
+@import "./theme";
+
 .about {
+  background-color: $light-grey;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet-landscape {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+  }
+
   &-img {
     width: 100%;
     object-fit: cover;
+
+    @include mobile-landscape {
+      width: 90%;
+    }
+
+    @include tablet-landscape {
+      width: 50%;
+    }
   }
 
-  p {
-    font-size: 0.9rem;
-    line-height: 1.25rem;
+  &-info {
+    margin-top: 1.25rem;
+
+    @include mobile-landscape {
+      max-width: 90%;
+    }
+
+    @include tablet-landscape {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 1rem 0;
+      max-width: 60ch;
+      font-size: 0.9rem;
+      line-height: 1.25rem;
+
+      &:first-child {
+        @include tablet-landscape {
+          margin-top: 0;
+        }
+      }
+    }
   }
 }

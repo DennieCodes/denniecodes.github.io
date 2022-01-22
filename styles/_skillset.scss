@@ -2,13 +2,18 @@
 @import "./theme";
 
 .skillset {
+  background-color: $light-grey;
+
+  // h2 {
+  //   // margin-bottom: 0.5rem;
+  // }
+
   &-directory {
-    // background-color: $dark-grey;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 0.5rem;
+    gap: 1rem;
 
     @include mobile-expand {
       gap: 1rem;
@@ -18,15 +23,38 @@
       gap: 1.75rem;
     }
 
+    @include tablet-landscape {
+      flex-direction: row;
+    }
+
     h3 {
-      flex: 0 0 100%;
+      width: 100%;
       font-size: 1.25rem;
+      height: 1.25rem;
       font-weight: 500;
       text-align: center;
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  &-subgroup {
+    background-color: $off-white;
+    width: 100%;
+    // height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    border-radius: 10px;
+
+    @include tablet-landscape {
+      max-width: 45%;
     }
   }
 
   &-card {
+    flex-basis: 6rem;
     text-align: center;
 
     & img {
@@ -43,12 +71,12 @@
 
     p {
       margin: 0.5rem 0 1rem;
-      width: 5rem;
+      // width: 5rem;
       font-size: 0.9rem;
       overflow-wrap: normal;
 
-      @include mobile-expand {
-        font-weight: 400;
+      @include mobile-landscape {
+        font-size: 1rem;
       }
     }
   }
