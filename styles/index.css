@@ -18,6 +18,22 @@ footer {
   }
 }
 
+@media (min-width: 480px) {
+  section {
+    padding-bottom: 2.5rem;
+  }
+}
+@media (min-width: 600px) {
+  section {
+    padding-bottom: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    padding-bottom: 4rem;
+  }
+}
+
 h1 {
   font-family: "Noto Serif", serif;
   font-weight: 500;
@@ -76,15 +92,21 @@ a {
 
 header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
   background-color: #e4e4e4;
+}
+header .hamburger-icon {
+  width: 1.5em;
+  height: 1em;
+}
+header .close-icon {
+  display: none;
 }
 header .brand {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 0.25rem;
 }
 header .brand .logo {
   width: 25px;
@@ -97,21 +119,112 @@ header .brand .logo {
   }
 }
 header .brand h1 {
+  margin-top: 0.25rem;
   font-weight: 500;
   font-size: 1rem;
 }
 header nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: none;
+  position: absolute;
+  width: calc(100% + 1em);
+  height: 18rem;
+  box-sizing: border-box;
+  background-color: #e4e4e4;
   color: #000;
+  left: -1em;
+  top: -11px;
+  padding-left: 2.5em;
+  padding-top: 5em;
+}
+@media (min-width: 600px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 24rem;
+    transform: translateX(25%);
+    height: unset;
+    background-color: unset;
+    left: 6rem;
+    top: 2.25em;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  header nav {
+    position: unset;
+    flex-direction: row;
+    width: 65%;
+    justify-content: space-between;
+    transform: unset;
+    margin-top: 1.25rem;
+  }
+}
+header nav li {
+  margin-bottom: 1em;
+}
+@media (min-width: 600px) {
+  header nav li {
+    margin: 0.5em;
+    font-family: "Alata", "san-serif";
+    text-transform: none;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  header nav li {
+    margin: 0;
+    margin-left: 2em;
+  }
 }
 header nav li a {
-  color: #000;
+  color: #de6d1f;
   font-weight: 500;
-  font-size: 1.15rem;
-  font-family: "Crimson Pro", serif;
+  font-size: 1.25rem;
+}
+header nav img {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 1.7em;
+  left: 2em;
+}
+@media (min-width: 600px) {
+  header nav img {
+    display: none;
+  }
+}
+
+.res-menu-input {
+  opacity: 0;
+  z-index: 1;
+}
+.res-menu-input:checked ~ nav {
+  display: block;
+}
+.res-menu-input:checked ~ label .hamburger-icon {
+  display: none;
+}
+.res-menu-input:checked ~ label .close-icon {
+  display: block;
+}
+.res-menu-close-icon {
+  display: none;
+}
+.res-menu-label {
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+.res-menu-label img {
+  position: absolute;
+  top: 0;
+  left: -1em;
+}
+@media (min-width: 600px) {
+  .res-menu-label img {
+    display: none;
+  }
 }
 
 .landing {
@@ -498,13 +611,19 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 1.5rem 0 0;
+  padding-top: 2rem;
+  justify-content: space-between;
   background-color: #e4e4e4;
+}
+@media (min-width: 600px) {
+  footer {
+    padding-top: 2.5rem;
+  }
 }
 footer .brand {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 50%;
 }
 footer .brand img {
   width: 4rem;
@@ -512,8 +631,7 @@ footer .brand img {
 }
 footer .site-links {
   margin-top: 0;
-  flex-basis: 40%;
-  margin-left: 10%;
+  flex-basis: 25%;
 }
 footer .site-links p {
   margin-top: 0;
@@ -529,21 +647,27 @@ footer .site-links li a {
 }
 footer .footer-social {
   display: flex;
-  flex-direction: row;
-  flex-basis: 100%;
+  flex-direction: column;
   gap: 1rem;
 }
 footer .footer-social p {
-  width: 18ch;
+  margin: 0;
 }
 footer .footer-social ul {
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
   width: 100%;
+  justify-content: center;
   align-items: center;
+  margin: 0;
 }
-footer .attribution {
+
+.attribution {
+  margin: 0;
+  padding: 1rem 0;
+  color: #fff;
+  background-color: #4c4c4c;
   width: 100%;
   text-align: center;
   font-size: 0.75rem;

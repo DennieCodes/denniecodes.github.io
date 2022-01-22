@@ -18,6 +18,20 @@ footer {
   }
 }
 
+section {
+  @include mobile-landscape {
+    padding-bottom: 2.5rem;
+  }
+
+  @include tablet-portrait {
+    padding-bottom: 3.5rem;
+  }
+
+  @include desktop-small {
+    padding-bottom: 4rem;
+  }
+}
+
 h1 {
   font-family: $font-title, serif;
   font-weight: 500;

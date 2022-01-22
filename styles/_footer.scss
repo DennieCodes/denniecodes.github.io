@@ -1,3 +1,4 @@
+@import "./mixins";
 @import "./theme";
 
 footer {
@@ -5,14 +6,19 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 1.5rem 0 0;
-
+  padding-top: 2rem;
+  justify-content: space-between;
   background-color: $light-grey;
+
+  @include tablet-portrait {
+    padding-top: 2.5rem;
+  }
 
   .brand {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-basis: 50%;
+    // flex-basis: 50%;
 
     img {
       width: 4rem;
@@ -22,8 +28,7 @@ footer {
 
   .site-links {
     margin-top: 0;
-    flex-basis: 40%;
-    margin-left: 10%;
+    flex-basis: 25%;
 
     p {
       margin-top: 0;
@@ -43,12 +48,14 @@ footer {
 
   .footer-social {
     display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
+    flex-direction: column;
+    // justify-content: center;
+    // flex-basis: 100%;
     gap: 1rem;
 
     p {
-      width: 18ch;
+      // width: 18ch;
+      margin: 0;
     }
 
     ul {
@@ -56,14 +63,9 @@ footer {
       flex-direction: row;
       gap: 0.75rem;
       width: 100%;
+      justify-content: center;
       align-items: center;
+      margin: 0;
     }
-  }
-
-  .attribution {
-    width: 100%;
-    text-align: center;
-    font-size: 0.75rem;
-    line-height: 0.5rem;
   }
 }

@@ -3,20 +3,25 @@
 
 header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  // align-items: center;
 
   background-color: $light-grey;
 
-  // @include mobile-expand {
-  //   padding: 1rem clamp(1rem, calc(100% - 375px), 3rem);
-  // }
+  .hamburger-icon {
+    width: 1.5em;
+    height: 1em;
+  }
+
+  .close-icon {
+    display: none;
+  }
 
   .brand {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0.25rem;
 
     .logo {
       width: 25px;
@@ -29,27 +34,143 @@ header {
     }
 
     h1 {
+      margin-top: 0.25rem;
       font-weight: 500;
       font-size: 1rem;
     }
   }
 
   nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    display: none;
+    position: absolute;
+    width: calc(100% + 1em);
+    height: 18rem;
+    box-sizing: border-box;
+    background-color: $light-grey;
     color: $text-color--main;
+    left: -1em;
+    top: -11px;
+
+    padding-left: 2.5em;
+    padding-top: 5em;
+
+    @include tablet-portrait {
+      display: flex;
+      justify-content: space-between;
+      width: 24rem;
+      transform: translateX(25%);
+      height: unset;
+      background-color: unset;
+      left: 6rem;
+      top: 2.25em;
+      padding: 0;
+    }
+
+    @include tablet-landscape {
+      position: unset;
+      flex-direction: row;
+      width: 65%;
+      justify-content: space-between;
+      transform: unset;
+      margin-top: 1.25rem;
+    }
 
     & li {
+      margin-bottom: 1em;
+
+      @include tablet-portrait {
+        margin: 0.5em;
+        font-family: "Alata", "san-serif";
+        text-transform: none;
+        font-size: 1rem;
+      }
+
+      @include desktop-small {
+        margin: 0;
+        margin-left: 2em;
+      }
+
       a {
-        color: $text-color--main;
+        color: $color-orange;
         font-weight: 500;
-        font-size: 1.15rem;
-        font-family: $font-alt-title, serif;
-        // text-decoration: underline;
+
+        @include tablet-landscape {
+        }
+        font-size: 1.25rem;
+      }
+    }
+
+    img {
+      height: 25px;
+      width: 25px;
+
+      position: absolute;
+      top: 1.7em;
+      left: 2em;
+
+      @include tablet-portrait {
+        display: none;
       }
     }
   }
 }
+
+.res-menu {
+  &-input {
+    opacity: 0;
+    z-index: 1;
+
+    &:checked ~ nav {
+      display: block;
+    }
+
+    &:checked ~ label .hamburger-icon {
+      display: none;
+    }
+
+    &:checked ~ label .close-icon {
+      display: block;
+    }
+  }
+
+  &-close-icon {
+    display: none;
+  }
+
+  &-label {
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 2;
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: -1em;
+
+      @include tablet-portrait {
+        display: none;
+      }
+    }
+  }
+}
+
+// Old non-collapsible manu
+// nav {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+
+//   color: $text-color--main;
+
+//   & li {
+//     a {
+//       color: $text-color--main;
+//       font-weight: 500;
+//       font-size: 1.15rem;
+//       font-family: $font-alt-title, serif;
+//       // text-decoration: underline;
+//     }
+//   }
+// }
