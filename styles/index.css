@@ -32,7 +32,7 @@ footer {
 }
 @media (min-width: 600px) {
   section {
-    padding-bottom: 3.5rem;
+    padding: 1rem 3rem 3.5rem 3rem;
   }
 }
 @media (min-width: 1024px) {
@@ -56,6 +56,7 @@ h2 {
   font-weight: 500;
   font-family: "Noto Serif", serif;
   color: #000;
+  margin: 1rem 0 1.25rem;
 }
 @media (min-width: 376px) {
   h2 {
@@ -253,7 +254,6 @@ header nav img {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
-  /* Social Media and Professional Links Styling */
 }
 @media (min-width: 1024px) {
   .landing {
@@ -264,24 +264,6 @@ header nav img {
   .landing {
     padding: 5rem 2.5rem;
   }
-}
-.landing-social {
-  margin: 0.25rem 0 1rem;
-}
-.landing-social ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-.landing-social ul li {
-  width: 1.5em;
-  margin-bottom: 0.5em;
-}
-.landing-social-icon {
-  width: 1.5rem;
 }
 .landing-intro {
   color: #000;
@@ -294,7 +276,7 @@ header nav img {
 }
 .landing-intro h1 {
   font-size: 2.25rem;
-  margin: 0 0 0.25em;
+  margin: 0 0 0.15em;
 }
 @media (min-width: 376px) {
   .landing-intro h1 {
@@ -332,7 +314,7 @@ header nav img {
   object-fit: cover;
 }
 .landing-cta {
-  margin: 4rem 0 2.5rem;
+  margin: 2.5rem 0 2rem;
   font-weight: 500;
 }
 .landing-cta a {
@@ -640,15 +622,48 @@ header nav img {
   }
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  /* Social Media and Professional Links Styling */
+}
+.contact h2 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .contact-info {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+.contact-info p {
+  max-width: 65ch;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.contact-info p:not(:first-child) {
+  margin-top: 0;
+}
+.contact-social {
+  margin: 0.5rem 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+.contact-social li {
+  width: 1.5em;
+  margin-bottom: 0.5em;
+}
+.contact-social-icon {
+  width: 1.5rem;
+}
+
 .contact-form {
   background-color: #404040;
   padding: 1.25rem;
   font-size: 0.8rem;
-}
-@media (min-width: 600px) {
-  .contact-form {
-    margin: 0 5%;
-  }
 }
 @media (min-width: 768px) {
   .contact-form {
@@ -754,6 +769,9 @@ footer .footer-social ul {
   justify-content: center;
   align-items: center;
   margin: 0;
+}
+footer .footer-social-icon {
+  width: 1.5rem;
 }
 
 .attribution {

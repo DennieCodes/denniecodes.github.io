@@ -53,8 +53,6 @@ footer {
   .footer-social {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // flex-basis: 100%;
     gap: 1rem;
 
     p {
@@ -70,6 +68,10 @@ footer {
       justify-content: center;
       align-items: center;
       margin: 0;
+    }
+
+    &-icon {
+      width: 1.5rem;
     }
   }
 }

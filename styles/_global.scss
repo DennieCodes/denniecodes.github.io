@@ -28,7 +28,8 @@ section {
   }
 
   @include tablet-portrait {
-    padding-bottom: 3.5rem;
+    // padding-bottom: 3.5rem;
+    padding: 1rem 3rem 3.5rem 3rem;
   }
 
   @include desktop-small {
@@ -50,6 +51,8 @@ h2 {
   font-weight: 500;
   font-family: $font-title, serif;
   color: $text-color--main;
+
+  margin: 1rem 0 1.25rem;
 
   @include mobile-expand {
     font-size: clamp(2rem, 8vw, 2.75rem);

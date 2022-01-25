@@ -1,14 +1,57 @@
 @import "./mixins";
 @import "./theme";
 
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  &-info {
+    @include tablet-landscape {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    p {
+      max-width: 65ch;
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+
+      &:not(:first-child) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  /* Social Media and Professional Links Styling */
+  &-social {
+    margin: 0.5rem 0 1rem;
+
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+
+    li {
+      width: 1.5em;
+      margin-bottom: 0.5em;
+    }
+
+    &-icon {
+      width: 1.5rem;
+      // background-color: $bg-color--second;
+      // border-radius: 15px;
+    }
+  }
+}
 .contact-form {
   background-color: $bg-color--second;
   padding: 1.25rem;
   font-size: 0.8rem;
-
-  @include tablet-portrait {
-    margin: 0 5%;
-  }
 
   @include tablet-landscape {
     max-width: 75%;

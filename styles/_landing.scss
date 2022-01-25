@@ -14,31 +14,6 @@
     padding: 5rem 2.5rem;
   }
 
-  /* Social Media and Professional Links Styling */
-  &-social {
-    margin: 0.25rem 0 1rem;
-
-    ul {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 1rem;
-
-      li {
-        width: 1.5em;
-        margin-bottom: 0.5em;
-      }
-    }
-
-    &-icon {
-      width: 1.5rem;
-      // background-color: $bg-color--second;
-      // border-radius: 15px;
-    }
-  }
-
   &-intro {
     color: $text-color--main;
     margin-bottom: 2rem;
@@ -49,7 +24,7 @@
 
     h1 {
       font-size: 2.25rem;
-      margin: 0 0 0.25em;
+      margin: 0 0 0.15em;
 
       @include mobile-expand {
         font-size: clamp(2.5rem, 10vw, 3.75rem);
@@ -88,7 +63,7 @@
   }
 
   &-cta {
-    margin: 4rem 0 2.5rem;
+    margin: 2.5rem 0 2rem;
 
     // margin: 2.25rem 0 3rem;
     font-weight: 500;
