@@ -27,6 +27,7 @@
   padding-bottom: 1rem;
   background-color: $bg-color--second;
   border-radius: 5px;
+  height: 100%;
 
   @include tablet-landscape {
     max-width: 47%;

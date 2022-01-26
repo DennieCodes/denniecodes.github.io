@@ -355,6 +355,7 @@ header nav img {
   padding-bottom: 1rem;
   background-color: #404040;
   border-radius: 5px;
+  height: 100%;
 }
 @media (min-width: 768px) {
   .project {
