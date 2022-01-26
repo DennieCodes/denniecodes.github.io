@@ -67,3 +67,36 @@
     }
   }
 }
+
+.developer-bio {
+  h3 {
+    text-align: center;
+    font-family: $font-title, serif;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color-orange;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &.active > div {
+    display: inline-block;
+  }
+
+  &-text {
+    display: none;
+    padding: 2rem 1rem;
+    color: $text-color--contrast;
+    background-color: $bg-color--second;
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    a {
+      color: $color-orange;
+      text-decoration: underline;
+    }
+  }
+}

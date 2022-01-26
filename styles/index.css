@@ -188,7 +188,6 @@ header nav li {
 @media (min-width: 600px) {
   header nav li {
     margin: 0.5em;
-    font-family: "Alata", "san-serif";
     text-transform: none;
     font-size: 1rem;
   }
@@ -620,6 +619,32 @@ header nav img {
   .about-info p:first-child {
     margin-top: 0;
   }
+}
+
+.developer-bio h3 {
+  text-align: center;
+  font-family: "Noto Serif", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #de6d1f;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.developer-bio.active > div {
+  display: inline-block;
+}
+.developer-bio-text {
+  display: none;
+  padding: 2rem 1rem;
+  color: #fff;
+  background-color: #404040;
+}
+.developer-bio-text p {
+  font-size: 0.8rem;
+}
+.developer-bio-text a {
+  color: #de6d1f;
+  text-decoration: underline;
 }
 
 .contact {
