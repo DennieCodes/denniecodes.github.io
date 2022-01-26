@@ -56,10 +56,10 @@
       }
     }
 
-    img {
-      width: 100%;
-      object-fit: cover;
-    }
+    // img {
+    //   width: 100%;
+    //   object-fit: contain;
+    // }
   }
 
   &-cta {
@@ -78,7 +78,8 @@
   }
 
   &-hero-image {
-    object-fit: cover;
+    width: 100%;
+    object-fit: contain;
 
     @include desktop-small {
       width: 60%;

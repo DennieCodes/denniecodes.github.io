@@ -308,10 +308,6 @@ header nav img {
     line-height: 1.5rem;
   }
 }
-.landing-intro img {
-  width: 100%;
-  object-fit: cover;
-}
 .landing-cta {
   margin: 2.5rem 0 2rem;
   font-weight: 500;
@@ -323,7 +319,8 @@ header nav img {
   margin-right: 1rem;
 }
 .landing-hero-image {
-  object-fit: cover;
+  width: 100%;
+  object-fit: contain;
 }
 @media (min-width: 1024px) {
   .landing-hero-image {
@@ -390,7 +387,7 @@ header nav img {
   }
 }
 .project-snapshot {
-  object-fit: cover;
+  object-fit: contain;
 }
 .project-info {
   padding: 1rem;
