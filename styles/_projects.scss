@@ -5,7 +5,7 @@
 .project-directory {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1.5rem;
 
   @include tablet-landscape {
@@ -27,36 +27,31 @@
   padding-bottom: 1rem;
   background-color: $bg-color--second;
   border-radius: 5px;
-  height: 100%;
+
+  width: 100%;
 
   @include tablet-landscape {
     max-width: 47%;
   }
 
   @include desktop-small {
+    max-width: 43%;
     padding: 1rem;
   }
 
   @include desktop {
-    width: 45%;
+    max-width: 37%;
   }
 
   @include desktop-wide {
-    max-width: 40%;
-  }
-
-  &-images {
-    display: flex;
-    flex-direction: column;
-    padding: 0.75rem;
-
-    @include mobile-expand {
-      padding: 1rem;
-    }
+    max-width: 35%;
   }
 
   &-snapshot {
-    object-fit: contain;
+    padding: 1rem;
+    object-fit: scale-down;
+    max-height: 18rem;
+    // border: 2px solid red;
   }
 
   &-info {

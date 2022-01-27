@@ -4,21 +4,42 @@
 .contact {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @include desktop {
+    flex-direction: row;
+    gap: 2rem;
+  }
 
   h2 {
+    flex-basis: 100%;
     margin-bottom: 1rem;
   }
 
   &-info {
     @include tablet-landscape {
       max-width: 80%;
-      margin: 0 auto;
+      // margin: 0 auto;
+    }
+
+    @include desktop {
+      max-width: 40%;
     }
 
     p {
       max-width: 65ch;
       font-size: 0.9rem;
       line-height: 1.5rem;
+
+      @include tablet-portrait {
+        font-size: 1rem;
+      }
+
+      @include desktop {
+        margin-top: 0;
+        // font-size: 1rem;
+      }
 
       &:not(:first-child) {
         margin-top: 0;
@@ -55,12 +76,16 @@
 
   @include tablet-landscape {
     max-width: 75%;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   @include desktop-small {
     padding: 2rem;
     max-width: 60%;
+  }
+
+  @include desktop {
+    max-width: 45%;
   }
 
   input {

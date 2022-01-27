@@ -332,7 +332,7 @@ header nav img {
 .project-directory {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1.5rem;
 }
 @media (min-width: 768px) {
@@ -355,7 +355,7 @@ header nav img {
   padding-bottom: 1rem;
   background-color: #404040;
   border-radius: 5px;
-  height: 100%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .project {
@@ -364,31 +364,24 @@ header nav img {
 }
 @media (min-width: 1024px) {
   .project {
+    max-width: 43%;
     padding: 1rem;
   }
 }
 @media (min-width: 1440px) {
   .project {
-    width: 45%;
+    max-width: 37%;
   }
 }
 @media (min-width: 1920px) {
   .project {
-    max-width: 40%;
-  }
-}
-.project-images {
-  display: flex;
-  flex-direction: column;
-  padding: 0.75rem;
-}
-@media (min-width: 376px) {
-  .project-images {
-    padding: 1rem;
+    max-width: 35%;
   }
 }
 .project-snapshot {
-  object-fit: contain;
+  padding: 1rem;
+  object-fit: scale-down;
+  max-height: 18rem;
 }
 .project-info {
   padding: 1rem;
@@ -607,10 +600,15 @@ header nav img {
   font-size: 0.9rem;
   line-height: 1.25rem;
 }
-@media (min-width: 1920px) {
+@media (min-width: 1440px) {
   .about-info p {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+@media (min-width: 1920px) {
+  .about-info p {
+    font-size: 1rem;
   }
 }
 @media (min-width: 768px) {
@@ -622,11 +620,17 @@ header nav img {
 .developer-bio h3 {
   text-align: center;
   font-family: "Noto Serif", serif;
+  margin-top: 1.5rem;
   font-size: 1rem;
   font-weight: 400;
   color: #de6d1f;
   text-decoration: underline;
   cursor: pointer;
+}
+@media (min-width: 1440px) {
+  .developer-bio h3 {
+    font-size: 1.15rem;
+  }
 }
 .developer-bio.active > div {
   display: inline-block;
@@ -636,9 +640,15 @@ header nav img {
   padding: 2rem 1rem;
   color: #fff;
   background-color: #404040;
+  width: 100%;
 }
 .developer-bio-text p {
   font-size: 0.8rem;
+}
+@media (min-width: 1440px) {
+  .developer-bio-text p {
+    font-size: 1rem;
+  }
 }
 .developer-bio-text a {
   color: #de6d1f;
@@ -648,21 +658,44 @@ header nav img {
 .contact {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   /* Social Media and Professional Links Styling */
 }
+@media (min-width: 1440px) {
+  .contact {
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
 .contact h2 {
+  flex-basis: 100%;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .contact-info {
     max-width: 80%;
-    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-info {
+    max-width: 40%;
   }
 }
 .contact-info p {
   max-width: 65ch;
   font-size: 0.9rem;
   line-height: 1.5rem;
+}
+@media (min-width: 600px) {
+  .contact-info p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-info p {
+    margin-top: 0;
+  }
 }
 .contact-info p:not(:first-child) {
   margin-top: 0;
@@ -691,13 +724,17 @@ header nav img {
 @media (min-width: 768px) {
   .contact-form {
     max-width: 75%;
-    margin: 0 auto;
   }
 }
 @media (min-width: 1024px) {
   .contact-form {
     padding: 2rem;
     max-width: 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .contact-form {
+    max-width: 45%;
   }
 }
 .contact-form input {
