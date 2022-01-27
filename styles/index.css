@@ -710,10 +710,10 @@ header nav img {
 }
 .contact-social li {
   width: 1.5em;
-  margin-bottom: 0.5em;
+  margin: 0 0.25rem 0.5em;
 }
 .contact-social-icon {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 .contact-form {
@@ -831,7 +831,7 @@ footer .footer-social ul {
   margin: 0;
 }
 footer .footer-social-icon {
-  width: 1.5rem;
+  width: 2rem;
 }
 
 .attribution {
