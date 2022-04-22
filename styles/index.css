@@ -8,7 +8,6 @@ section,
 header,
 footer {
   padding: 1rem;
-  padding-bottom: 1rem;
 }
 @media (min-width: 376px) {
   section,
@@ -25,6 +24,9 @@ footer {
   }
 }
 
+section {
+  margin-bottom: 3em;
+}
 @media (min-width: 480px) {
   section {
     padding-bottom: 2.5rem;
@@ -56,7 +58,7 @@ h2 {
   font-weight: 500;
   font-family: "Noto Serif", serif;
   color: #000;
-  margin: 1rem 0 1.25rem;
+  margin: 1rem 0 1.5rem;
 }
 @media (min-width: 376px) {
   h2 {
@@ -338,6 +340,7 @@ header nav img {
 @media (min-width: 768px) {
   .project-directory {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2.5rem;
   }
 }
@@ -375,12 +378,12 @@ header nav img {
 }
 @media (min-width: 1920px) {
   .project {
-    max-width: 35%;
+    max-width: 28%;
   }
 }
 .project-snapshot {
   padding: 1rem;
-  object-fit: scale-down;
+  object-fit: cover;
   max-height: 18rem;
 }
 .project-info {
@@ -406,6 +409,10 @@ header nav img {
   .project-info p {
     font-size: 1rem;
   }
+}
+.project-info a {
+  color: #de6d1f;
+  text-decoration: underline;
 }
 .project-tech {
   margin: 1.75rem 0;
@@ -450,6 +457,7 @@ header nav img {
 }
 .project-links a {
   color: #1fde5d;
+  text-decoration: none;
   border-bottom: 1px solid #1fde5d;
 }
 
@@ -461,7 +469,7 @@ header nav img {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 1rem;
+  gap: 2.5rem;
 }
 @media (min-width: 376px) {
   .skillset-directory {

@@ -9,7 +9,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 2.5rem;
 
     @include mobile-expand {
       gap: 1rem;

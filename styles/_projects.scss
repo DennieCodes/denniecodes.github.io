@@ -10,6 +10,7 @@
 
   @include tablet-landscape {
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2.5rem;
   }
 
@@ -27,7 +28,6 @@
   padding-bottom: 1rem;
   background-color: $bg-color--second;
   border-radius: 5px;
-
   width: 100%;
 
   @include tablet-landscape {
@@ -44,18 +44,17 @@
   }
 
   @include desktop-wide {
-    max-width: 35%;
+    max-width: 28%;
   }
 
   &-snapshot {
     padding: 1rem;
-    object-fit: scale-down;
+    object-fit: cover;
     max-height: 18rem;
     // border: 2px solid red;
   }
 
   &-info {
-    // background-color: $bg-color--second;
     padding: 1rem;
     color: $text-color--contrast;
 
@@ -77,6 +76,11 @@
       @include mobile-landscape {
         font-size: 1rem;
       }
+    }
+
+    & a {
+      color: $color-orange;
+      text-decoration: underline;
     }
   }
 
@@ -123,6 +127,7 @@
 
     & a {
       color: $color-green;
+      text-decoration: none;
       border-bottom: 1px solid $color-green;
     }
   }

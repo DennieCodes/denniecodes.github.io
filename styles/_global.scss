@@ -11,7 +11,6 @@ section,
 header,
 footer {
   padding: 1rem;
-  padding-bottom: 1rem;
 
   @include mobile-expand {
     padding: 1rem clamp(1rem, calc(100% - 375px), 2.5rem);
@@ -23,6 +22,8 @@ footer {
 }
 
 section {
+  margin-bottom: 3em;
+
   @include mobile-landscape {
     padding-bottom: 2.5rem;
   }
@@ -52,7 +53,7 @@ h2 {
   font-family: $font-title, serif;
   color: $text-color--main;
 
-  margin: 1rem 0 1.25rem;
+  margin: 1rem 0 1.5rem;
 
   @include mobile-expand {
     font-size: clamp(2rem, 8vw, 2.75rem);
