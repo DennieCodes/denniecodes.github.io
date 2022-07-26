@@ -1,77 +1,84 @@
-@import "./mixins";
-@import "./theme";
+@import './mixins';
+@import './theme';
 
 footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 1.5rem 0 0;
-  padding-top: 2rem;
-  justify-content: space-between;
-  background-color: $light-grey;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 1.5rem 0 0;
+	padding-top: 2rem;
+	position: relative;
+	background-color: $light-grey;
 
-  @include tablet-portrait {
-    padding-top: 2.5rem;
-  }
+	@include tablet-portrait {
+		padding: 2.5rem 3rem 0 3rem;
+	}
 
-  @include desktop-small {
-    // padding: 2.5rem 8rem 0;
-  }
+	@include desktop-small {
+		padding: 2.5rem 3rem 0 3rem;
+	}
 
-  .brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // flex-basis: 50%;
+	@include desktop {
+		padding: 2.5rem 6.5rem 0 6.5rem;
+	}
 
-    img {
-      width: 4rem;
-      height: 4rem;
-    }
-  }
+	.brand {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// flex-basis: 50%;
 
-  .site-links {
-    margin-top: 0;
-    flex-basis: 25%;
+		img {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
 
-    p {
-      margin-top: 0;
-      font-weight: 500;
-      border-bottom: 1px solid $text-color--main;
-    }
+	.site-links {
+		margin-top: 0;
+		flex-basis: 25%;
 
-    li {
-      height: 1.5rem;
+		p {
+			width: 20ch;
+			margin-top: 0;
+			font-weight: 500;
+			border-bottom: 1px solid $text-color--main;
+		}
 
-      a {
-        text-decoration: underline;
-        color: $text-color--main;
-      }
-    }
-  }
+		li {
+			height: 1.5rem;
 
-  .footer-social {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+			a {
+				text-decoration: underline;
+				color: $text-color--main;
+			}
+		}
+	}
 
-    p {
-      // width: 18ch;
-      margin: 0;
-    }
+	.footer-social {
+		position: absolute;
+		left: 50%;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 
-    ul {
-      display: flex;
-      flex-direction: row;
-      gap: 0.75rem;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-    }
+		p {
+			// width: 18ch;
+			margin: 0;
+		}
 
-    &-icon {
-      width: 2rem;
-    }
-  }
+		ul {
+			display: flex;
+			flex-direction: row;
+			gap: 0.75rem;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+		}
+
+		&-icon {
+			width: 2rem;
+		}
+	}
 }
