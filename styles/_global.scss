@@ -1,100 +1,99 @@
-@import "./mixins";
-@import "./theme";
+@import './mixins';
+@import './theme';
 
 /* Global styling across Page sections */
 body {
-  font-family: $font-text, sans-serif;
-  background-color: $off-white;
+	font-family: $font-text, sans-serif;
+	background-color: $off-white;
 }
 
 section,
 header,
 footer {
-  padding: 1rem;
+	padding: 1rem;
 
-  @include mobile-expand {
-    padding: 1rem clamp(1rem, calc(100% - 375px), 2.5rem);
-  }
+	@include mobile-expand {
+		padding: 1rem clamp(1rem, calc(100% - 375px), 2.5rem);
+	}
 
-  @include desktop-small {
-    padding: 1rem 5rem;
-  }
+	@include desktop-small {
+		padding: 1rem 5rem;
+	}
 }
 
 section {
-  margin-bottom: 3em;
+	margin-bottom: 3em;
 
-  @include mobile-landscape {
-    padding-bottom: 2.5rem;
-  }
+	@include mobile-landscape {
+		padding-bottom: 2.5rem;
+	}
 
-  @include tablet-portrait {
-    // padding-bottom: 3.5rem;
-    padding: 1rem 3rem 3.5rem 3rem;
-  }
+	@include tablet-portrait {
+		padding: 1rem 3rem 3.5rem 3rem;
+	}
 
-  @include desktop-small {
-    padding-bottom: 4rem;
-  }
+	@include desktop-small {
+		padding-bottom: 4rem;
+	}
 
-  @include desktop {
-    padding: 1rem 6.5rem 4rem;
-  }
+	@include desktop {
+		padding: 1rem 6.5rem 4rem;
+	}
 }
 
 h1 {
-  font-family: $font-title, serif;
-  font-weight: 500;
+	font-family: $font-title, serif;
+	font-weight: 600;
 }
 
 h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  font-family: $font-title, serif;
-  color: $text-color--main;
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: $font-title, serif;
+	color: $text-color--main;
 
-  margin: 1rem 0 1.5rem;
+	margin: 1rem 0 1.5rem;
 
-  @include mobile-expand {
-    font-size: clamp(2rem, 8vw, 2.75rem);
-  }
+	@include mobile-expand {
+		font-size: clamp(2rem, 8vw, 2.75rem);
+	}
 }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: $text-color--main;
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: $text-color--main;
 
-  @include mobile-expand {
-    font-size: clamp(1.5rem, 8vw, 2rem);
-  }
+	@include mobile-expand {
+		font-size: clamp(1.5rem, 8vw, 2rem);
+	}
 }
 
 ul {
-  padding: 0;
+	padding: 0;
 }
 
 li {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .button-cta {
-  width: 10rem;
-  // padding: 0.5rem 2rem;
-  height: 2.5rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  background-color: $color-orange;
-  color: $text-color--contrast;
-  cursor: pointer;
+	width: 10rem;
+	// padding: 0.5rem 2rem;
+	height: 2.5rem;
+	font-size: 1rem;
+	border-radius: 5px;
+	background-color: $color-orange;
+	color: $text-color--contrast;
+	cursor: pointer;
 }
 
 .button-secondary-cta {
-  background-color: $bg-color--main;
-  border: 2px solid $color-orange;
-  color: $color-orange;
+	background-color: $bg-color--main;
+	border: 2px solid $color-orange;
+	color: $color-orange;
 }

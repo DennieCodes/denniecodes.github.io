@@ -1,164 +1,171 @@
-@import "./mixins";
-@import "./theme";
+@import './mixins';
+@import './theme';
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 
-  background-color: $light-grey;
+	background-color: $light-grey;
 
-  .hamburger-icon {
-    width: 1.5em;
-    height: 1em;
-  }
+	.hamburger-icon {
+		width: 1.5em;
+		height: 1em;
+	}
 
-  .close-icon {
-    display: none;
-  }
+	.close-icon {
+		display: none;
+	}
 
-  .brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	.brand {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-    .logo {
-      width: 25px;
-      height: 25px;
+		.logo {
+			width: 25px;
+			height: 25px;
 
-      @include mobile-expand {
-        width: clamp(25px, 9vw, 50px);
-        height: clamp(25px, 9vw, 50px);
-      }
-    }
+			@include mobile-expand {
+				width: clamp(25px, 9vw, 50px);
+				height: clamp(25px, 9vw, 50px);
+			}
+		}
 
-    h1 {
-      margin-top: 0.25rem;
-      font-weight: 500;
-      font-size: 1rem;
-    }
-  }
+		h1 {
+			margin-top: 0.25rem;
+			font-weight: 500;
+			font-size: 1rem;
+		}
+	}
 
-  nav {
-    display: none;
-    position: absolute;
-    width: calc(100% + 1em);
-    height: 18rem;
-    box-sizing: border-box;
-    background-color: $light-grey;
-    color: $text-color--main;
-    left: -1em;
-    top: -11px;
+	nav {
+		font-family: $font-title, serif;
+		display: none;
+		position: absolute;
+		width: calc(100% + 1em);
+		height: 18rem;
+		box-sizing: border-box;
+		background-color: $light-grey;
+		color: $text-color--main;
+		left: -1em;
+		top: -11px;
 
-    padding-left: 2.5em;
-    padding-top: 5em;
+		padding-left: 2.5em;
+		padding-top: 5em;
 
-    @include tablet-portrait {
-      display: flex;
-      justify-content: space-between;
-      width: 24rem;
-      transform: translateX(25%);
-      height: unset;
-      background-color: unset;
-      left: 6rem;
-      top: 2.25em;
-      padding: 0;
-    }
+		@include tablet-portrait {
+			display: flex;
+			justify-content: space-between;
+			width: 24rem;
+			transform: translateX(25%);
+			height: unset;
+			background-color: unset;
+			left: 6rem;
+			top: 2.25em;
+			padding: 0;
+		}
 
-    @include tablet-landscape {
-      position: unset;
-      flex-direction: row;
-      width: 65%;
-      justify-content: space-between;
-      transform: unset;
-      margin-top: 1.25rem;
-    }
+		@include tablet-landscape {
+			position: unset;
+			flex-direction: row;
+			width: 65%;
+			justify-content: space-between;
+			transform: unset;
+			margin-top: 1.25rem;
+		}
 
-    @include desktop-small {
-      width: 50%;
-    }
+		@include desktop-small {
+			width: 50%;
+		}
 
-    @include desktop {
-      width: 35%;
-    }
+		@include desktop {
+			width: 35%;
+		}
 
-    & li {
-      margin-bottom: 1em;
+		& li {
+			margin-bottom: 1em;
 
-      @include tablet-portrait {
-        margin: 0.5em;
-        text-transform: none;
-        font-size: 1rem;
-      }
+			@include tablet-portrait {
+				margin: 0.5em;
+				text-transform: none;
+				font-size: 1rem;
+			}
 
-      @include desktop-small {
-        margin: 0;
-        margin-left: 2em;
-      }
+			@include desktop-small {
+				margin: 0;
+				margin-left: 2em;
+			}
 
-      a {
-        color: $color-orange;
-        font-weight: 500;
+			a {
+				color: $color-orange;
+				font-weight: 500;
 
-        @include tablet-landscape {
-        }
-        font-size: 1.25rem;
-      }
-    }
+				&:hover {
+					// color: $color-orange-hover;
+					// font-weight: 700;
+					border-bottom: 3px solid $color-orange;
+				}
 
-    img {
-      height: 25px;
-      width: 25px;
+				@include tablet-landscape {
+				}
+				font-size: 1.25rem;
+			}
+		}
 
-      position: absolute;
-      top: 1.7em;
-      left: 2em;
+		img {
+			height: 25px;
+			width: 25px;
 
-      @include tablet-portrait {
-        display: none;
-      }
-    }
-  }
+			position: absolute;
+			top: 1.7em;
+			left: 2em;
+
+			@include tablet-portrait {
+				display: none;
+			}
+		}
+	}
 }
 
 .res-menu {
-  &-input {
-    opacity: 0;
-    z-index: 1;
+	&-input {
+		opacity: 0;
+		z-index: 1;
 
-    &:checked ~ nav {
-      display: block;
-    }
+		&:checked ~ nav {
+			display: block;
+		}
 
-    &:checked ~ label .hamburger-icon {
-      display: none;
-    }
+		&:checked ~ label .hamburger-icon {
+			display: none;
+		}
 
-    &:checked ~ label .close-icon {
-      display: block;
-    }
-  }
+		&:checked ~ label .close-icon {
+			display: block;
+		}
+	}
 
-  &-close-icon {
-    display: none;
-  }
+	&-close-icon {
+		display: none;
+	}
 
-  &-label {
-    position: relative;
-    margin-left: auto;
-    cursor: pointer;
-    z-index: 2;
+	&-label {
+		position: relative;
+		margin-left: auto;
+		cursor: pointer;
+		z-index: 2;
 
-    & img {
-      position: absolute;
-      top: 0;
-      left: -1em;
+		& img {
+			position: absolute;
+			top: 0;
+			left: -1em;
 
-      @include tablet-portrait {
-        display: none;
-      }
-    }
-  }
+			@include tablet-portrait {
+				display: none;
+			}
+		}
+	}
 }
 
 // Old non-collapsible manu
