@@ -57,6 +57,10 @@
   &-info {
     padding: 1rem;
     color: $text-color--contrast;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 
     & h3 {
       font-size: 1.8rem;
@@ -89,8 +93,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: flex-start;
+    gap: 1.5rem;
 
     @include mobile-landscape {
       margin: 2rem 0;
@@ -103,7 +107,7 @@
 
       padding: 0.5rem 1rem;
       line-height: 1rem;
-      border-radius: 16px;
+      border-radius: 5px;
 
       @include mobile-landscape {
         font-size: 1rem;
@@ -118,8 +122,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: space-around;
+    gap: 1.5rem;
+    justify-content: flex-start;
 
     @include mobile-landscape {
       font-size: 1rem;

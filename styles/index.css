@@ -393,6 +393,10 @@ header nav img {
 .project-info {
   padding: 1rem;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .project-info h3 {
   font-size: 1.8rem;
@@ -423,8 +427,8 @@ header nav img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 @media (min-width: 480px) {
   .project-tech {
@@ -437,7 +441,7 @@ header nav img {
   color: #fff;
   padding: 0.5rem 1rem;
   line-height: 1rem;
-  border-radius: 16px;
+  border-radius: 5px;
 }
 @media (min-width: 480px) {
   .project-tech li {
@@ -451,8 +455,8 @@ header nav img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: space-around;
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
 @media (min-width: 480px) {
   .project-links {
