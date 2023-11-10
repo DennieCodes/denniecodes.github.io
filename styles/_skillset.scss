@@ -4,6 +4,12 @@
 .skillset {
   background-color: $light-grey;
 
+  h2 {
+    @include tablet-landscape {
+      margin: 1em 0 1.25em;
+    }
+  }
+
   &-directory {
     display: flex;
     flex-direction: column;
@@ -41,6 +47,7 @@
   &-directory {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   &-subgroup {
@@ -53,6 +60,18 @@
     row-gap: 1rem;
     border-radius: 10px;
     padding: 2.5em 2em;
+
+    h3 {
+      @include desktop-small {
+        margin-bottom: 1.5em;
+      }
+    }
+
+    @include desktop-small {
+      padding: 2.5em 5em;
+      gap: 1.25em;
+      max-width: 800px;
+    }
   }
 
   &-card {

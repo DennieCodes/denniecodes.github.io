@@ -18,6 +18,10 @@
 		color: $text-color--main;
 		margin-bottom: 2rem;
 
+		@include tablet-landscape {
+			margin-top: 1.5em;
+		}
+
 		@include desktop {
 			padding-right: 2rem;
 		}

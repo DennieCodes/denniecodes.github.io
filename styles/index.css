@@ -274,6 +274,11 @@ header nav img {
   color: #000;
   margin-bottom: 2rem;
 }
+@media (min-width: 768px) {
+  .landing-intro {
+    margin-top: 1.5em;
+  }
+}
 @media (min-width: 1440px) {
   .landing-intro {
     padding-right: 2rem;
@@ -377,7 +382,7 @@ header nav img {
 }
 @media (min-width: 1440px) {
   .project {
-    max-width: 37%;
+    max-width: 34%;
   }
 }
 @media (min-width: 1920px) {
@@ -472,6 +477,11 @@ header nav img {
 .skillset {
   background-color: #e4e4e4;
 }
+@media (min-width: 768px) {
+  .skillset h2 {
+    margin: 1em 0 1.25em;
+  }
+}
 .skillset-directory {
   display: flex;
   flex-direction: column;
@@ -511,6 +521,7 @@ header nav img {
 .skillset-directory {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .skillset-subgroup {
   flex: 1;
@@ -522,6 +533,18 @@ header nav img {
   row-gap: 1rem;
   border-radius: 10px;
   padding: 2.5em 2em;
+}
+@media (min-width: 1024px) {
+  .skillset-subgroup h3 {
+    margin-bottom: 1.5em;
+  }
+}
+@media (min-width: 1024px) {
+  .skillset-subgroup {
+    padding: 2.5em 5em;
+    gap: 1.25em;
+    max-width: 800px;
+  }
 }
 .skillset-card {
   flex-basis: 6rem;
@@ -666,6 +689,11 @@ header nav img {
   justify-content: flex-start;
   flex-wrap: wrap;
   /* Social Media and Professional Links Styling */
+}
+@media (min-width: 768px) {
+  .contact {
+    align-items: center;
+  }
 }
 @media (min-width: 1440px) {
   .contact {
