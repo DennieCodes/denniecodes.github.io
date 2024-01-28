@@ -270,6 +270,16 @@ header nav img {
     padding: 5rem 2.5rem;
   }
 }
+@media (min-width: 1440px) {
+  .landing {
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1920px) {
+  .landing {
+    gap: 22em;
+  }
+}
 .landing-intro {
   color: #000;
   margin-bottom: 2rem;
@@ -333,9 +343,25 @@ header nav img {
   width: 100%;
   object-fit: contain;
 }
+@media (min-width: 768px) {
+  .landing-hero-image {
+    width: 90%;
+    align-self: center;
+  }
+}
 @media (min-width: 1024px) {
   .landing-hero-image {
     width: 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .landing-hero-image {
+    width: 50%;
+  }
+}
+@media (min-width: 1920px) {
+  .landing-hero-image {
+    width: 40%;
   }
 }
 

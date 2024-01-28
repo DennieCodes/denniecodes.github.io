@@ -14,6 +14,14 @@
 		padding: 5rem 2.5rem;
 	}
 
+	@include desktop {
+		justify-content: space-around;
+	}
+
+	@include desktop-wide {
+		gap: 22em;
+	}
+
 	&-intro {
 		color: $text-color--main;
 		margin-bottom: 2rem;
@@ -59,11 +67,6 @@
 				line-height: 1.5rem;
 			}
 		}
-
-		// img {
-		//   width: 100%;
-		//   object-fit: contain;
-		// }
 	}
 
 	&-cta {
@@ -85,8 +88,21 @@
 		width: 100%;
 		object-fit: contain;
 
+		@include tablet-landscape {
+			width: 90%;
+			align-self:center;
+		}
+
 		@include desktop-small {
 			width: 60%;
+		}
+
+		@include desktop {
+			width: 50%;
+		}
+
+		@include desktop-wide {
+			width: 40%;
 		}
 	}
 }
