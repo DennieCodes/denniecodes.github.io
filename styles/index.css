@@ -571,7 +571,13 @@ header nav img {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #e4e4e4;
+}
+.about h2 {
+  align-self: flex-start;
 }
 .about-content {
   display: flex;

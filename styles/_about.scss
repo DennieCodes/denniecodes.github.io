@@ -2,12 +2,20 @@
 @import "./theme";
 
 .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $light-grey;
+
+  & h2 {
+    align-self: flex-start;
+  }
 
   &-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    // max-width: 1300px;
 
     @include tablet-landscape {
       flex-direction: row;
